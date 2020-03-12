@@ -1,8 +1,10 @@
 {
     "uuid": "ad0f14b9-59ac-4cc7-bf74-d760a287a979",
-    "tags": [],
+    "tags": [
+        "MIRACUM"
+    ],
     "format-version": "0.1",
-    "name": "MIRACUM - Quality control (beta1)",
+    "name": "MIRACUM - Quality control",
     "version": 4,
     "steps": {
         "0": {
