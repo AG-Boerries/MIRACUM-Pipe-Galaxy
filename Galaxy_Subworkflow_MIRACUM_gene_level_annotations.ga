@@ -1,6 +1,8 @@
 {
     "uuid": "bf8b3f37-18a5-41ee-9bf2-f9e327648672",
-    "tags": [],
+    "tags": [
+        "MIRACUM"
+    ],
     "format-version": "0.1",
     "name": "MIRACUM - gene-level annotations",
     "version": 6,
@@ -152,17 +154,17 @@
                         "newtype": "tabular"
                     }
                 },
-                "HideDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "HideDatasetAction",
-                    "action_arguments": {}
-                },
                 "RenameDatasetActionoutput": {
                     "output_name": "output",
                     "action_type": "RenameDatasetAction",
                     "action_arguments": {
                         "newname": "#{infile1|basename} annotated with UniProt  cancer genes"
                     }
+                },
+                "HideDatasetActionoutput": {
+                    "output_name": "output",
+                    "action_type": "HideDatasetAction",
+                    "action_arguments": {}
                 }
             },
             "label": null,
@@ -223,17 +225,17 @@
                         "newtype": "tabular"
                     }
                 },
-                "HideDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "HideDatasetAction",
-                    "action_arguments": {}
-                },
                 "RenameDatasetActionoutput": {
                     "output_name": "output",
                     "action_type": "RenameDatasetAction",
                     "action_arguments": {
                         "newname": "#{infile1|basename}, CGI genes"
                     }
+                },
+                "HideDatasetActionoutput": {
+                    "output_name": "output",
+                    "action_type": "HideDatasetAction",
+                    "action_arguments": {}
                 }
             },
             "label": null,

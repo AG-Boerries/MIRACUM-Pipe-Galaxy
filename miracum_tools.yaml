@@ -3,99 +3,129 @@ install_repository_dependencies: True
 install_resolver_dependencies: True
 
 tools:
-- name: text_processing
-  owner: bgruening
-  revisions:
-  - 0a8c6b61f0f4
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 - name: column_arrange_by_header
   owner: bgruening
   revisions:
   - 6c6d26ff01ff
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: samtools_stats
   owner: devteam
   revisions:
-  - 793ad847121d
+  - 145f6d74ff5e
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: samtools_rmdup
   owner: devteam
   revisions:
-  - 9129584416e2
+  - 586f9e1cdb2b
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: bamtools_filter
-  owner: devteam
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: samtools_view
+  owner: iuc
   revisions:
-  - bd735cae4ce6
+  - b01db2684fa5
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: samtools_calmd
   owner: devteam
   revisions:
-  - e65c2cd0964c
+  - 06dc50b7b711
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: freebayes
   owner: devteam
   revisions:
-  - 156b60c1530f
+  - ef2c525bd8cd
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: fastqc
-  owner: devteam
-  revisions:
-  - 9da02be9c6cc
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: multiqc
-  owner: iuc
-  revisions:
-  - b2f1f75d49c4
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: varscan_somatic
-  owner: iuc
-  revisions:
-  - b79bb8b09822
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: trimmomatic
-  owner: pjbriggs
-  revisions:
-  - dfa082f84068
-  tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: bwa
   owner: devteam
   revisions:
   - 01ac0a5fedc3
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: gemini_query
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: qualimap_bamqc
   owner: iuc
   revisions:
-  - cd00221d67cb
+  - e7fd6754d093
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: multiqc
+  owner: iuc
+  revisions:
+  - 3d93dd18d9f8
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: varscan_somatic
+  owner: iuc
+  revisions:
+  - a57606054bd7
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: trimmomatic
+  owner: pjbriggs
+  revisions:
+  - dfa082f84068
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: lofreq_indelqual
+  owner: iuc
+  revisions:
+  - 2ae554b4bcca
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: lofreq_alnqual
+  owner: iuc
+  revisions:
+  - 2953c43180c0
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: lofreq_filter
+  owner: iuc
+  revisions:
+  - fdba1586551d
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: lofreq_call
+  owner: iuc
+  revisions:
+  - dfadc322b065
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions:
+  - 9da02be9c6cc
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: snpeff
   owner: iuc
   revisions:
-  - 8f92c2b26e6d
+  - 74aebe30fb52
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: gemini_load
   owner: iuc
   revisions:
-  - b2c25142267e
+  - 45296e47d565
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - 0a8c6b61f0f4
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: gemini_query
+  owner: iuc
+  revisions:
+  - da74170c55c7
+  tool_panel_section_label: Tools from workflows
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: gemini_annotate
   owner: iuc
   revisions:
-  - 0c8f7322f8fc
+  - f2f3bc622a16
   tool_panel_section_label: Tools from workflows
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/

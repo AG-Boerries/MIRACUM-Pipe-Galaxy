@@ -6,9 +6,9 @@ Users
 
 These are the Galaxy Workflow files that define the MIRACUM pipeline used in
 Galaxy. To use these workflows, import the files into any Galaxy instance that
-has all required tools installed (currrently only https://usegalaxy.eu), then
+has all required tools installed, then
 run the *Miracum - main*, *Miracum - variant annotation* and *Miracum - report
-variants* workflows, in this order, to go from raw sequenced exome reads to
+variants* workflows (or their *panel* counterparts), in this order, to go from raw sequenced exome reads to
 annotated tabular variant reports.
 
 

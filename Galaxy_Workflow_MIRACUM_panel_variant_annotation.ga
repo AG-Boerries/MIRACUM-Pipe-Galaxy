@@ -1,11 +1,11 @@
 {
-    "uuid": "b3c17aea-fe06-4d41-9be6-f17b55b478a2",
+    "uuid": "722fb14b-64c7-4025-b1af-bc08f0426231",
     "tags": [
         "MIRACUM"
     ],
     "format-version": "0.1",
-    "name": "MIRACUM - variant annotation",
-    "version": 34,
+    "name": "MIRACUM - panel variant annotation",
+    "version": 1,
     "steps": {
         "0": {
             "tool_id": null,
@@ -14,7 +14,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output",
-                    "uuid": "23d7e4a6-0af4-44d2-b3a6-6bb9178abaeb",
+                    "uuid": "322cdd16-4919-48c4-abbf-dfd14f7c7137",
                     "label": null
                 }
             ],
@@ -41,7 +41,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output",
-                    "uuid": "c38007a0-6a11-471d-9f03-7e1044f8e580",
+                    "uuid": "f3f3e5ad-a4a2-4e8f-bd56-41f2723d2ebe",
                     "label": null
                 }
             ],
@@ -68,7 +68,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output",
-                    "uuid": "68e06305-4a63-4b4e-be4e-a1ad2ca5d3da",
+                    "uuid": "6def1dd3-c914-495f-bd45-b0f69baa195c",
                     "label": null
                 }
             ],
@@ -95,7 +95,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output",
-                    "uuid": "38c8b2da-bbbb-4618-a397-f0d6a772b3e0",
+                    "uuid": "e1e6b335-9c5a-4b9e-9165-7903a754be99",
                     "label": null
                 }
             ],
@@ -122,7 +122,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output",
-                    "uuid": "a08507cb-469f-41e3-875b-bd67e768f697",
+                    "uuid": "dadd53c6-254e-4eac-8f33-35985f43b1a3",
                     "label": null
                 }
             ],
@@ -200,7 +200,7 @@
                 }
             ],
             "position": {
-                "top": 180.9375,
+                "top": 180.953125,
                 "left": 444.59375
             },
             "annotation": "Add effects on genes, transcripts and proteins to variant INFO field",
@@ -223,7 +223,7 @@
                     "id": 5
                 }
             },
-            "tool_state": "{\"__page__\": null, \"opt_content\": \"[\\\"gerp_bp\\\", \\\"cadd\\\", \\\"gene_tables\\\", \\\"genotypes\\\", \\\"info_string\\\"]\", \"__rerun_remap_job_id__\": null, \"has_genotypes\": \"\\\"true\\\"\", \"annotation_databases\": \"\\\"2019-01-12\\\"\", \"annotation_type\": \"\\\"snpEff\\\"\", \"ped\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"infile\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"opt_content\": \"[\\\"gerp_bp\\\", \\\"cadd\\\", \\\"gene_tables\\\", \\\"info_string\\\"]\", \"__rerun_remap_job_id__\": null, \"has_genotypes\": \"\\\"false\\\"\", \"annotation_databases\": \"\\\"2019-01-12\\\"\", \"annotation_type\": \"\\\"snpEff\\\"\", \"ped\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"infile\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\"}",
             "id": 6,
             "tool_shed_repository": {
                 "owner": "iuc",
