@@ -5,7 +5,7 @@
     ],
     "format-version": "0.1",
     "name": "MIRACUM - main",
-    "version": 4,
+    "version": 5,
     "steps": {
         "0": {
             "tool_id": null,
@@ -2041,8 +2041,8 @@
             "type": "subworkflow"
         },
         "13": {
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2d+galaxy1",
-            "tool_version": "2.2.2d+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
+            "tool_version": "2.2.2c+galaxy1",
             "outputs": [
                 {
                     "type": "input",
@@ -2079,7 +2079,7 @@
             "id": 13,
             "tool_shed_repository": {
                 "owner": "iuc",
-                "changeset_revision": "e7fd6754d093",
+                "changeset_revision": "4a89c6f84425",
                 "name": "qualimap_bamqc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
@@ -2102,7 +2102,7 @@
                 "left": 602.5
             },
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2d+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
             "type": "tool"
         },
         "14": {
@@ -2634,8 +2634,8 @@
             "type": "subworkflow"
         },
         "16": {
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2d+galaxy1",
-            "tool_version": "2.2.2d+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
+            "tool_version": "2.2.2c+galaxy1",
             "outputs": [
                 {
                     "type": "input",
@@ -2672,7 +2672,7 @@
             "id": 16,
             "tool_shed_repository": {
                 "owner": "iuc",
-                "changeset_revision": "e7fd6754d093",
+                "changeset_revision": "4a89c6f84425",
                 "name": "qualimap_bamqc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
@@ -2695,7 +2695,7 @@
                 "left": 953.90625
             },
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2d+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
             "type": "tool"
         },
         "17": {

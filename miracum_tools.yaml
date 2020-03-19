@@ -48,7 +48,7 @@ tools:
 - name: qualimap_bamqc
   owner: iuc
   revisions:
-  - e7fd6754d093
+  - 4a89c6f84425
   tool_panel_section_label: Tools from workflows
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: multiqc
