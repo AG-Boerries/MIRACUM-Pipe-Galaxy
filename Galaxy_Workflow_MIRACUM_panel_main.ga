@@ -528,7 +528,7 @@
                     "id": 9
                 }
             },
-            "tool_state": "{\"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"input_bam\\\": {\\\"__class__\\\": \\\"ConnectedValue\\\"}, \\\"ref_file\\\": \\\"hg19full\\\", \\\"reference_source_selector\\\": \\\"cached\\\"}\", \"__rerun_remap_job_id__\": null, \"iterations\": \"\\\"5\\\"\", \"__page__\": null}",
+            "tool_state": "{\"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"input_bam\\\": {\\\"__class__\\\": \\\"ConnectedValue\\\"}, \\\"ref_file\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\"}\", \"__rerun_remap_job_id__\": null, \"iterations\": \"\\\"5\\\"\", \"__page__\": null}",
             "id": 10,
             "tool_shed_repository": {
                 "owner": "devteam",
@@ -579,7 +579,7 @@
                     "id": 10
                 }
             },
-            "tool_state": "{\"baq_settings\": \"{\\\"__current_case__\\\": 0, \\\"extended_baq\\\": \\\"\\\", \\\"modify_quality\\\": \\\"\\\", \\\"use_baq\\\": \\\"\\\"}\", \"__page__\": null, \"option_set\": \"{\\\"__current_case__\\\": 1, \\\"adjust_mq\\\": \\\"50\\\", \\\"change_identical\\\": \\\"false\\\", \\\"option_sets\\\": \\\"advanced\\\"}\", \"__rerun_remap_job_id__\": null, \"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"ref_fasta\\\": \\\"hg19full\\\", \\\"reference_source_selector\\\": \\\"cached\\\"}\", \"input_bam\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\"}",
+            "tool_state": "{\"baq_settings\": \"{\\\"__current_case__\\\": 0, \\\"extended_baq\\\": \\\"\\\", \\\"modify_quality\\\": \\\"\\\", \\\"use_baq\\\": \\\"\\\"}\", \"__page__\": null, \"option_set\": \"{\\\"__current_case__\\\": 1, \\\"adjust_mq\\\": \\\"50\\\", \\\"change_identical\\\": \\\"false\\\", \\\"option_sets\\\": \\\"advanced\\\"}\", \"__rerun_remap_job_id__\": null, \"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"ref_fasta\\\": \\\"hg19\\\", \\\"reference_source_selector\\\": \\\"cached\\\"}\", \"input_bam\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\"}",
             "id": 11,
             "tool_shed_repository": {
                 "owner": "devteam",
@@ -736,7 +736,7 @@
                     "id": 13
                 }
             },
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"reads\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\", \"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"ref\\\": \\\"hg19full\\\", \\\"ref_selector\\\": \\\"cached\\\"}\", \"alnqual_choice\": \"{\\\"__current_case__\\\": 1, \\\"alnquals_to_use\\\": \\\"\\\", \\\"extended_baq\\\": \\\"true\\\"}\", \"recompute_all\": \"\\\"false\\\"\"}",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"reads\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\", \"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"ref\\\": \\\"hg19\\\", \\\"ref_selector\\\": \\\"cached\\\"}\", \"alnqual_choice\": \"{\\\"__current_case__\\\": 1, \\\"alnquals_to_use\\\": \\\"\\\", \\\"extended_baq\\\": \\\"true\\\"}\", \"recompute_all\": \"\\\"false\\\"\"}",
             "id": 14,
             "tool_shed_repository": {
                 "owner": "iuc",
@@ -793,7 +793,7 @@
                     "id": 14
                 }
             },
-            "tool_state": "{\"__page__\": null, \"reads\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\", \"__rerun_remap_job_id__\": null, \"strategy\": \"{\\\"__current_case__\\\": 1, \\\"reference_source\\\": {\\\"__current_case__\\\": 0, \\\"ref\\\": \\\"hg19full\\\", \\\"ref_selector\\\": \\\"cached\\\"}, \\\"selector\\\": \\\"dindel\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"reads\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\", \"__rerun_remap_job_id__\": null, \"strategy\": \"{\\\"__current_case__\\\": 1, \\\"reference_source\\\": {\\\"__current_case__\\\": 0, \\\"ref\\\": \\\"hg19\\\", \\\"ref_selector\\\": \\\"cached\\\"}, \\\"selector\\\": \\\"dindel\\\"}\"}",
             "id": 15,
             "tool_shed_repository": {
                 "owner": "iuc",
@@ -843,7 +843,7 @@
                     "id": 15
                 }
             },
-            "tool_state": "{\"__page__\": null, \"variant_types\": \"\\\"--call-indels\\\"\", \"filter_control\": \"{\\\"__current_case__\\\": 0, \\\"bonf\\\": \\\"1\\\", \\\"filter_type\\\": \\\"set_all_off\\\", \\\"others\\\": \\\"--no-default-filter\\\", \\\"sig\\\": \\\"1\\\"}\", \"__rerun_remap_job_id__\": null, \"regions\": \"{\\\"__current_case__\\\": 0, \\\"restrict_to_region\\\": \\\"genome\\\"}\", \"reads\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\", \"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"ref\\\": \\\"hg19canon\\\", \\\"ref_selector\\\": \\\"cached\\\"}\", \"call_control\": \"{\\\"__current_case__\\\": 1, \\\"align_quals\\\": {\\\"alnqual\\\": {\\\"__current_case__\\\": 0, \\\"alnqual_choice\\\": {\\\"__current_case__\\\": 1, \\\"alnquals_to_use\\\": \\\"\\\", \\\"extended_baq\\\": \\\"true\\\"}, \\\"use_alnqual\\\": \\\"\\\"}}, \\\"bc_quals\\\": {\\\"alt_bq\\\": {\\\"__current_case__\\\": 0, \\\"modify\\\": \\\"\\\"}, \\\"min_alt_bq\\\": \\\"6\\\", \\\"min_bq\\\": \\\"13\\\"}, \\\"coverage\\\": {\\\"max_depth\\\": \\\"1000000\\\", \\\"min_cov\\\": \\\"20\\\"}, \\\"joint_qual\\\": {\\\"def_alt_jq\\\": \\\"0\\\", \\\"min_alt_jq\\\": \\\"0\\\", \\\"min_jq\\\": \\\"0\\\"}, \\\"map_quals\\\": {\\\"min_mq\\\": \\\"1\\\", \\\"use_mq\\\": {\\\"__current_case__\\\": 0, \\\"max_mq\\\": \\\"255\\\", \\\"no_mq\\\": \\\"\\\"}}, \\\"pe\\\": {\\\"use_orphan\\\": \\\"false\\\"}, \\\"set_call_options\\\": \\\"yes\\\", \\\"source_qual\\\": {\\\"use_src_qual\\\": {\\\"__current_case__\\\": 1, \\\"def_nm_q\\\": \\\"-1\\\", \\\"ign_vcf\\\": {\\\"__class__\\\": \\\"ConnectedValue\\\"}, \\\"src_qual\\\": \\\"--src-qual\\\"}}}\"}",
+            "tool_state": "{\"__page__\": null, \"variant_types\": \"\\\"--call-indels\\\"\", \"filter_control\": \"{\\\"__current_case__\\\": 0, \\\"bonf\\\": \\\"1\\\", \\\"filter_type\\\": \\\"set_all_off\\\", \\\"others\\\": \\\"--no-default-filter\\\", \\\"sig\\\": \\\"1\\\"}\", \"__rerun_remap_job_id__\": null, \"regions\": \"{\\\"__current_case__\\\": 0, \\\"restrict_to_region\\\": \\\"genome\\\"}\", \"reads\": \"{\\\"__class__\\\": \\\"ConnectedValue\\\"}\", \"reference_source\": \"{\\\"__current_case__\\\": 0, \\\"ref\\\": \\\"hg19canon\\\", \\\"ref_selector\\\": \\\"cached\\\"}\", \"call_control\": \"{\\\"__current_case__\\\": 1, \\\"align_quals\\\": {\\\"alnqual\\\": {\\\"__current_case__\\\": 0, \\\"alnqual_choice\\\": {\\\"__current_case__\\\": 1, \\\"alnquals_to_use\\\": \\\"\\\", \\\"extended_baq\\\": \\\"true\\\"}, \\\"use_alnqual\\\": \\\"\\\"}}, \\\"bc_quals\\\": {\\\"alt_bq\\\": {\\\"__current_case__\\\": 0, \\\"modify\\\": \\\"\\\"}, \\\"min_alt_bq\\\": \\\"13\\\", \\\"min_bq\\\": \\\"13\\\"}, \\\"coverage\\\": {\\\"max_depth\\\": \\\"1000000\\\", \\\"min_cov\\\": \\\"20\\\"}, \\\"joint_qual\\\": {\\\"def_alt_jq\\\": \\\"0\\\", \\\"min_alt_jq\\\": \\\"0\\\", \\\"min_jq\\\": \\\"0\\\"}, \\\"map_quals\\\": {\\\"min_mq\\\": \\\"1\\\", \\\"use_mq\\\": {\\\"__current_case__\\\": 0, \\\"max_mq\\\": \\\"255\\\", \\\"no_mq\\\": \\\"\\\"}}, \\\"pe\\\": {\\\"use_orphan\\\": \\\"false\\\"}, \\\"set_call_options\\\": \\\"yes\\\", \\\"source_qual\\\": {\\\"use_src_qual\\\": {\\\"__current_case__\\\": 1, \\\"def_nm_q\\\": \\\"-1\\\", \\\"ign_vcf\\\": {\\\"__class__\\\": \\\"ConnectedValue\\\"}, \\\"src_qual\\\": \\\"--src-qual\\\"}}}\"}",
             "id": 16,
             "tool_shed_repository": {
                 "owner": "iuc",
