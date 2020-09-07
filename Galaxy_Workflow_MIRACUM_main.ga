@@ -21,7 +21,7 @@
             "outputs": [],
             "position": {
                 "left": 288.51666259765625,
-                "top": 662.3999633789062
+                "top": 662.3999938964844
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -32,7 +32,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "54ce9a67-45c6-402c-a691-9e0ddab41e9d"
+                    "uuid": "d29de79a-8be8-4477-a78b-e9b8a1c0d10c"
                 }
             ]
         },
@@ -53,7 +53,7 @@
             "outputs": [],
             "position": {
                 "left": 285.0500030517578,
-                "top": 762.8499755859375
+                "top": 762.8500061035156
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
@@ -64,7 +64,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "9a371003-4386-4289-99b7-6c49910d17b2"
+                    "uuid": "5095c157-b1f9-4efe-9a57-233a2d33bcef"
                 }
             ]
         },
@@ -85,7 +85,7 @@
             "outputs": [],
             "position": {
                 "left": 538.3500061035156,
-                "top": 662.3999633789062
+                "top": 662.3999938964844
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -96,7 +96,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "eb8e8a3a-93cc-410a-b780-7bb6ff8b11d1"
+                    "uuid": "f5b1a09a-5ea7-4db9-86ec-a216e487f333"
                 }
             ]
         },
@@ -117,7 +117,7 @@
             "outputs": [],
             "position": {
                 "left": 538.6499938964844,
-                "top": 762.8499755859375
+                "top": 762.8500061035156
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -128,7 +128,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "e6424d16-d24f-4618-9da3-7de3c75007bc"
+                    "uuid": "9241b379-ae2b-4983-8000-2c2f1ef643fd"
                 }
             ]
         },
@@ -160,7 +160,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "52b651d4-4d66-43fc-aaa4-1d03c9cb74e6"
+                    "uuid": "2a38b383-5a57-4fbb-b176-a5a60fbb584a"
                 }
             ]
         },
@@ -192,7 +192,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "fed9e792-5d9f-41e7-820f-d376fb2934be"
+                    "uuid": "981775bd-5809-4ee3-9805-011e9737e796"
                 }
             ]
         },
@@ -224,7 +224,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "1b583038-efbe-4dfd-b1c4-032f5287c061"
+                    "uuid": "3a1f9e0b-5ebe-4ab1-afea-7a94275fc60b"
                 }
             ]
         },
@@ -256,7 +256,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "522d5a14-ae14-43c6-aae3-47a36714c546"
+                    "uuid": "b3047f96-5bbb-478e-872d-76e641c16061"
                 }
             ]
         },
@@ -288,7 +288,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "71f6f4fe-07f3-4e74-bfe5-79ce3390da54"
+                    "uuid": "aedaf5f0-72eb-4639-9e72-8c5feab4ba5c"
                 }
             ]
         },
@@ -329,8 +329,8 @@
                 }
             ],
             "position": {
-                "left": 806.8833312988281,
-                "top": 662.3999633789062
+                "left": 806.88330078125,
+                "top": 662.3999938964844
             },
             "post_job_actions": {
                 "HideDatasetActionfastq_out_r1_unpaired": {
@@ -385,14 +385,14 @@
             "uuid": "5e34d0fe-5016-4c0a-abb7-9c720583c5b2",
             "workflow_outputs": [
                 {
-                    "label": "FastQ out R2 paired Normal",
-                    "output_name": "fastq_out_r2_paired",
-                    "uuid": "e4a04efa-1eb1-4c0b-98c0-529995459e68"
-                },
-                {
                     "label": "FastQ out R1 paired Normal",
                     "output_name": "fastq_out_r1_paired",
                     "uuid": "a8bf36d8-1828-4467-858d-88c29e14fd30"
+                },
+                {
+                    "label": "FastQ out R2 paired Normal",
+                    "output_name": "fastq_out_r2_paired",
+                    "uuid": "e4a04efa-1eb1-4c0b-98c0-529995459e68"
                 }
             ]
         },
@@ -909,13 +909,13 @@
             "workflow_outputs": [
                 {
                     "label": null,
-                    "output_name": "post_fastqc_txt_normal_fw",
-                    "uuid": "ae275d03-1284-44dd-bc94-3fae293bd0d2"
+                    "output_name": "post_fastqc_txt_tumor_fw",
+                    "uuid": "5a239d7a-c67f-4abf-be80-9874c56f80dc"
                 },
                 {
                     "label": null,
-                    "output_name": "post_fastqc_txt_tumor_fw",
-                    "uuid": "5a239d7a-c67f-4abf-be80-9874c56f80dc"
+                    "output_name": "post_fastqc_txt_normal_fw",
+                    "uuid": "ae275d03-1284-44dd-bc94-3fae293bd0d2"
                 },
                 {
                     "label": null,
@@ -966,7 +966,7 @@
                 }
             ],
             "position": {
-                "left": 807.8833312988281,
+                "left": 807.88330078125,
                 "top": 944.5166625976562
             },
             "post_job_actions": {
@@ -1022,14 +1022,14 @@
             "uuid": "a87f957f-452e-42e3-96b0-f4705b427bf6",
             "workflow_outputs": [
                 {
-                    "label": "FastQ out R1 paired Tumor",
-                    "output_name": "fastq_out_r1_paired",
-                    "uuid": "45346d4d-1ee0-4a38-9a6a-94a09616b3f4"
-                },
-                {
                     "label": "FastQ out R2 paired Tumor",
                     "output_name": "fastq_out_r2_paired",
                     "uuid": "affc1402-7147-44df-bb50-5b641c30b497"
+                },
+                {
+                    "label": "FastQ out R1 paired Tumor",
+                    "output_name": "fastq_out_r1_paired",
+                    "uuid": "45346d4d-1ee0-4a38-9a6a-94a09616b3f4"
                 }
             ]
         },
@@ -1063,7 +1063,7 @@
             "name": "MIRACUM - Quality control",
             "outputs": [],
             "position": {
-                "left": 1406.9833374023438,
+                "left": 1406.9833984375,
                 "top": 205.26666259765625
             },
             "subworkflow": {
@@ -1546,6 +1546,11 @@
             "workflow_outputs": [
                 {
                     "label": null,
+                    "output_name": "post_fastqc_txt_normal_rv",
+                    "uuid": "3fe03afd-3715-44b2-b1f4-5c976c8c9049"
+                },
+                {
+                    "label": null,
                     "output_name": "post_fastqc_txt_normal_fw",
                     "uuid": "aff2efd5-a192-47f4-8b5c-48083ed4b4ad"
                 },
@@ -1558,11 +1563,6 @@
                     "label": null,
                     "output_name": "post_fastqc_txt_tumor_rv",
                     "uuid": "b5dd8583-a418-494a-93f3-a09a1ae3e818"
-                },
-                {
-                    "label": null,
-                    "output_name": "post_fastqc_txt_normal_rv",
-                    "uuid": "3fe03afd-3715-44b2-b1f4-5c976c8c9049"
                 }
             ]
         },
@@ -1600,7 +1600,7 @@
             ],
             "position": {
                 "left": 1106.9833374023438,
-                "top": 662.3999633789062
+                "top": 662.3999938964844
             },
             "post_job_actions": {
                 "RenameDatasetActionbam_output": {
@@ -1912,14 +1912,14 @@
             "uuid": "617bad6c-ebfe-4fcf-8ea2-519d4f8e064d",
             "workflow_outputs": [
                 {
-                    "label": "QualiMap BamQC report Normal",
-                    "output_name": "output_html",
-                    "uuid": "fbe966f8-9302-455a-aa0f-d17ecf647090"
-                },
-                {
-                    "label": "QualiMap BamQC raw Normal",
+                    "label": "bamqc_raw_normal",
                     "output_name": "raw_data",
                     "uuid": "12eef2ee-7240-4c21-80ca-93e80608ac0e"
+                },
+                {
+                    "label": "bamqc_html_normal",
+                    "output_name": "output_html",
+                    "uuid": "fbe966f8-9302-455a-aa0f-d17ecf647090"
                 }
             ]
         },
@@ -1939,7 +1939,7 @@
             "outputs": [],
             "position": {
                 "left": 1421,
-                "top": 662.3999633789062
+                "top": 662.3999938964844
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -2359,13 +2359,13 @@
                 },
                 {
                     "label": null,
-                    "output_name": "post_sam_view_proc",
-                    "uuid": "d91f4544-6fde-472d-88d0-ccd34f83e8d7"
+                    "output_name": "post_sam_stats",
+                    "uuid": "6549ba2a-506e-448c-b617-716fad5adf99"
                 },
                 {
                     "label": null,
-                    "output_name": "post_sam_stats",
-                    "uuid": "6549ba2a-506e-448c-b617-716fad5adf99"
+                    "output_name": "post_sam_view_proc",
+                    "uuid": "d91f4544-6fde-472d-88d0-ccd34f83e8d7"
                 }
             ]
         },
@@ -2423,14 +2423,14 @@
             "uuid": "1f5e90ff-b328-460f-ac74-ecde4d9973ce",
             "workflow_outputs": [
                 {
-                    "label": "QualiMap BamQC report Tumor",
-                    "output_name": "output_html",
-                    "uuid": "64104618-6fac-46e1-9def-a7d19fdbbb43"
-                },
-                {
-                    "label": null,
+                    "label": "bamqc_raw_tumor",
                     "output_name": "raw_data",
                     "uuid": "187f51e9-8912-41c8-8dea-55d75d160a2f"
+                },
+                {
+                    "label": "bamqc_html_tumor",
+                    "output_name": "output_html",
+                    "uuid": "64104618-6fac-46e1-9def-a7d19fdbbb43"
                 }
             ]
         },
@@ -2865,6 +2865,11 @@
             "workflow_outputs": [
                 {
                     "label": null,
+                    "output_name": "post_sam_stats_proc",
+                    "uuid": "9d00d8e7-bdfe-4804-91c8-c8f93b6b0163"
+                },
+                {
+                    "label": null,
                     "output_name": "post_sam_view_proc",
                     "uuid": "5cea1181-878a-452d-aab9-3110d915ba01"
                 },
@@ -2872,11 +2877,6 @@
                     "label": null,
                     "output_name": "post_sam_stats",
                     "uuid": "ecada56d-10f7-4134-b284-5d13c6f99791"
-                },
-                {
-                    "label": null,
-                    "output_name": "post_sam_stats_proc",
-                    "uuid": "9d00d8e7-bdfe-4804-91c8-c8f93b6b0163"
                 }
             ]
         },
@@ -2914,7 +2914,7 @@
             ],
             "position": {
                 "left": 1704.6500244140625,
-                "top": 741.816650390625
+                "top": 741.8166656494141
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
@@ -2948,6 +2948,6 @@
     "tags": [
         "MIRACUM"
     ],
-    "uuid": "931d3c66-1f63-4235-b055-bde45588fd7d",
-    "version": 47
+    "uuid": "18e098df-f38e-4366-8d5d-85c68a10ad18",
+    "version": 48
 }
