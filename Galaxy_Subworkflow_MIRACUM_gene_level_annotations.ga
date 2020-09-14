@@ -1,391 +1,380 @@
 {
-    "uuid": "bf8b3f37-18a5-41ee-9bf2-f9e327648672",
-    "tags": [
-        "MIRACUM"
-    ],
+    "a_galaxy_workflow": "true",
+    "annotation": "",
     "format-version": "0.1",
     "name": "MIRACUM - gene-level annotations",
-    "version": 6,
     "steps": {
         "0": {
-            "tool_id": null,
-            "tool_version": null,
-            "outputs": [],
-            "workflow_outputs": [
-                {
-                    "output_name": "output",
-                    "uuid": "1c100d79-32a4-4823-accd-015dc23426f3",
-                    "label": null
-                }
-            ],
-            "input_connections": {},
-            "tool_state": "{}",
-            "id": 0,
-            "uuid": "e327c72b-04d6-4984-be70-c45ff51d922f",
-            "errors": null,
-            "name": "Input dataset",
-            "label": "Gene-level Report",
-            "inputs": [],
-            "position": {
-                "top": 125.5,
-                "left": 341.5
-            },
             "annotation": "",
             "content_id": null,
-            "type": "data_input"
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Gene-level Report"
+                }
+            ],
+            "label": "Gene-level Report",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 370,
+                "top": 133
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "e327c72b-04d6-4984-be70-c45ff51d922f",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "468d47f0-2dfb-40d4-845e-8b5c89b03b0a"
+                }
+            ]
         },
         "1": {
-            "tool_id": null,
-            "tool_version": null,
-            "outputs": [],
-            "workflow_outputs": [
-                {
-                    "output_name": "output",
-                    "uuid": "1fbb79ca-32db-4578-a2ba-d8ddaafb01fe",
-                    "label": null
-                }
-            ],
-            "input_connections": {},
-            "tool_state": "{}",
-            "id": 1,
-            "uuid": "5bc518f6-4e2c-4146-bc50-9f5d68f9ebe4",
-            "errors": null,
-            "name": "Input dataset",
-            "label": "UniProt Cancer Genes",
-            "inputs": [],
-            "position": {
-                "top": 264.46875,
-                "left": 342.84375
-            },
             "annotation": "",
             "content_id": null,
-            "type": "data_input"
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "UniProt Cancer Genes"
+                }
+            ],
+            "label": "UniProt Cancer Genes",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 370,
+                "top": 239
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "5bc518f6-4e2c-4146-bc50-9f5d68f9ebe4",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "3e9c2559-6746-4cde-9724-c17269a62a14"
+                }
+            ]
         },
         "2": {
-            "tool_id": null,
-            "tool_version": null,
-            "outputs": [],
-            "workflow_outputs": [
-                {
-                    "output_name": "output",
-                    "uuid": "b564733a-0294-4192-b289-0b0632bd7ec1",
-                    "label": null
-                }
-            ],
-            "input_connections": {},
-            "tool_state": "{}",
-            "id": 2,
-            "uuid": "22ebff3f-3121-48c4-877f-fd0dbf11ea21",
-            "errors": null,
-            "name": "Input dataset",
-            "label": "CGI Genes",
-            "inputs": [],
-            "position": {
-                "top": 430.46875,
-                "left": 340.84375
-            },
             "annotation": "",
             "content_id": null,
-            "type": "data_input"
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "CGI Genes"
+                }
+            ],
+            "label": "CGI Genes",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 370,
+                "top": 369
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "22ebff3f-3121-48c4-877f-fd0dbf11ea21",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "4c38ff41-bab1-49ce-9b95-6d99b8e9979e"
+                }
+            ]
         },
         "3": {
-            "tool_id": null,
-            "tool_version": null,
-            "outputs": [],
-            "workflow_outputs": [
-                {
-                    "output_name": "output",
-                    "uuid": "a0b6c674-cfe2-4cc2-891d-8c44ecdaba74",
-                    "label": null
-                }
-            ],
-            "input_connections": {},
-            "tool_state": "{}",
-            "id": 3,
-            "uuid": "a2436ea3-225f-4308-aac3-f990a20659e3",
-            "errors": null,
-            "name": "Input dataset",
-            "label": "CIViC Gene Summaries",
-            "inputs": [],
-            "position": {
-                "top": 567.46875,
-                "left": 337.84375
-            },
             "annotation": "",
             "content_id": null,
-            "type": "data_input"
-        },
-        "4": {
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
-            "tool_version": "1.1.1",
-            "outputs": [
-                {
-                    "type": "input",
-                    "name": "output"
-                }
-            ],
-            "workflow_outputs": [],
-            "input_connections": {
-                "infile2": {
-                    "output_name": "output",
-                    "id": 1
-                },
-                "infile1": {
-                    "output_name": "output",
-                    "id": 0
-                }
-            },
-            "tool_state": "{\"__page__\": null, \"ignore_case\": \"\\\"false\\\"\", \"infile2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"infile1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"empty_string_filler\": \"\\\"0\\\"\", \"__rerun_remap_job_id__\": null, \"jointype\": \"\\\"-a 1\\\"\", \"header\": \"\\\"true\\\"\", \"column1\": \"\\\"1\\\"\", \"column2\": \"\\\"1\\\"\"}",
-            "id": 4,
-            "tool_shed_repository": {
-                "owner": "bgruening",
-                "changeset_revision": "0a8c6b61f0f4",
-                "name": "text_processing",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "uuid": "76b0e519-fc3f-4756-950f-69a326c6fcd5",
             "errors": null,
-            "name": "Join",
-            "post_job_actions": {
-                "ChangeDatatypeActionoutput": {
-                    "output_name": "output",
-                    "action_type": "ChangeDatatypeAction",
-                    "action_arguments": {
-                        "newtype": "tabular"
-                    }
-                },
-                "RenameDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "RenameDatasetAction",
-                    "action_arguments": {
-                        "newname": "#{infile1|basename} annotated with UniProt  cancer genes"
-                    }
-                },
-                "HideDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "HideDatasetAction",
-                    "action_arguments": {}
-                }
-            },
-            "label": null,
+            "id": 3,
+            "input_connections": {},
             "inputs": [
                 {
-                    "name": "infile2",
-                    "description": "runtime parameter for tool Join"
-                },
-                {
-                    "name": "infile1",
-                    "description": "runtime parameter for tool Join"
+                    "description": "",
+                    "name": "CIViC Gene Summaries"
                 }
             ],
+            "label": "CIViC Gene Summaries",
+            "name": "Input dataset",
+            "outputs": [],
             "position": {
-                "top": 254.46875,
-                "left": 572.84375
+                "left": 370,
+                "top": 509
             },
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
-            "type": "tool"
-        },
-        "5": {
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
-            "tool_version": "1.1.1",
-            "outputs": [
-                {
-                    "type": "input",
-                    "name": "output"
-                }
-            ],
-            "workflow_outputs": [],
-            "input_connections": {
-                "infile2": {
-                    "output_name": "output",
-                    "id": 2
-                },
-                "infile1": {
-                    "output_name": "output",
-                    "id": 4
-                }
-            },
-            "tool_state": "{\"__page__\": null, \"ignore_case\": \"\\\"false\\\"\", \"infile2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"infile1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"empty_string_filler\": \"\\\"0\\\"\", \"__rerun_remap_job_id__\": null, \"jointype\": \"\\\"-a 1\\\"\", \"header\": \"\\\"true\\\"\", \"column1\": \"\\\"1\\\"\", \"column2\": \"\\\"1\\\"\"}",
-            "id": 5,
-            "tool_shed_repository": {
-                "owner": "bgruening",
-                "changeset_revision": "0a8c6b61f0f4",
-                "name": "text_processing",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "uuid": "533bf5d3-4dc9-41cc-a384-e7ed29d6592e",
-            "errors": null,
-            "name": "Join",
-            "post_job_actions": {
-                "ChangeDatatypeActionoutput": {
-                    "output_name": "output",
-                    "action_type": "ChangeDatatypeAction",
-                    "action_arguments": {
-                        "newtype": "tabular"
-                    }
-                },
-                "RenameDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "RenameDatasetAction",
-                    "action_arguments": {
-                        "newname": "#{infile1|basename}, CGI genes"
-                    }
-                },
-                "HideDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "HideDatasetAction",
-                    "action_arguments": {}
-                }
-            },
-            "label": null,
-            "inputs": [
-                {
-                    "name": "infile2",
-                    "description": "runtime parameter for tool Join"
-                },
-                {
-                    "name": "infile1",
-                    "description": "runtime parameter for tool Join"
-                }
-            ],
-            "position": {
-                "top": 402.46875,
-                "left": 570.84375
-            },
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
-            "type": "tool"
-        },
-        "6": {
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
-            "tool_version": "1.1.1",
-            "outputs": [
-                {
-                    "type": "input",
-                    "name": "output"
-                }
-            ],
-            "workflow_outputs": [],
-            "input_connections": {
-                "infile2": {
-                    "output_name": "output",
-                    "id": 3
-                },
-                "infile1": {
-                    "output_name": "output",
-                    "id": 5
-                }
-            },
-            "tool_state": "{\"__page__\": null, \"ignore_case\": \"\\\"false\\\"\", \"infile2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"infile1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"empty_string_filler\": \"\\\".\\\"\", \"__rerun_remap_job_id__\": null, \"jointype\": \"\\\"-a 1\\\"\", \"header\": \"\\\"true\\\"\", \"column1\": \"\\\"1\\\"\", \"column2\": \"\\\"3\\\"\"}",
-            "id": 6,
-            "tool_shed_repository": {
-                "owner": "bgruening",
-                "changeset_revision": "0a8c6b61f0f4",
-                "name": "text_processing",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "uuid": "2d7e28ba-fba6-4e20-96d3-08727d3864f1",
-            "errors": null,
-            "name": "Join",
-            "post_job_actions": {
-                "ChangeDatatypeActionoutput": {
-                    "output_name": "output",
-                    "action_type": "ChangeDatatypeAction",
-                    "action_arguments": {
-                        "newtype": "tabular"
-                    }
-                },
-                "RenameDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "RenameDatasetAction",
-                    "action_arguments": {
-                        "newname": "#{infile1|basename}, and CIViC gene summaries"
-                    }
-                },
-                "HideDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "HideDatasetAction",
-                    "action_arguments": {}
-                }
-            },
-            "label": null,
-            "inputs": [
-                {
-                    "name": "infile2",
-                    "description": "runtime parameter for tool Join"
-                },
-                {
-                    "name": "infile1",
-                    "description": "runtime parameter for tool Join"
-                }
-            ],
-            "position": {
-                "top": 557.46875,
-                "left": 576.84375
-            },
-            "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
-            "type": "tool"
-        },
-        "7": {
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/column_arrange_by_header/bg_column_arrange_by_header/0.2",
-            "tool_version": "0.2",
-            "outputs": [
-                {
-                    "type": "tabular",
-                    "name": "output"
-                }
-            ],
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "a2436ea3-225f-4308-aac3-f990a20659e3",
             "workflow_outputs": [
                 {
+                    "label": null,
                     "output_name": "output",
-                    "uuid": "669ce91a-ef75-40dd-bd3b-ead9072da36f",
-                    "label": "annotated gene report"
+                    "uuid": "cd645e4a-446c-4feb-87e3-68917e105539"
                 }
-            ],
-            "input_connections": {
-                "param_input": {
-                    "output_name": "output",
-                    "id": 6
-                }
-            },
-            "tool_state": "{\"param_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"discard_remaining\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"rep_param_columns\": \"[{\\\"__index__\\\": 0, \\\"param_column\\\": \\\"gene\\\"}, {\\\"__index__\\\": 1, \\\"param_column\\\": \\\"chrom\\\"}, {\\\"__index__\\\": 2, \\\"param_column\\\": \\\"synonym\\\"}, {\\\"__index__\\\": 3, \\\"param_column\\\": \\\"hgnc_id\\\"}, {\\\"__index__\\\": 4, \\\"param_column\\\": \\\"entrez_id\\\"}, {\\\"__index__\\\": 5, \\\"param_column\\\": \\\"rvis_pct\\\"}, {\\\"__index__\\\": 6, \\\"param_column\\\": \\\"is_OG\\\"}, {\\\"__index__\\\": 7, \\\"param_column\\\": \\\"is_TS\\\"}, {\\\"__index__\\\": 8, \\\"param_column\\\": \\\"in_cgi_biomarkers\\\"}, {\\\"__index__\\\": 9, \\\"param_column\\\": \\\"clinvar_gene_phenotype\\\"}, {\\\"__index__\\\": 10, \\\"param_column\\\": \\\"gene_civic_url\\\"}, {\\\"__index__\\\": 11, \\\"param_column\\\": \\\"description\\\"}]\", \"__page__\": null}",
-            "id": 7,
-            "tool_shed_repository": {
-                "owner": "bgruening",
-                "changeset_revision": "6c6d26ff01ff",
-                "name": "column_arrange_by_header",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "uuid": "56ed2658-4fda-4baf-94ac-5897d0bed325",
+            ]
+        },
+        "4": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
             "errors": null,
-            "name": "Column arrange",
-            "post_job_actions": {
-                "RenameDatasetActionoutput": {
-                    "output_name": "output",
-                    "action_type": "RenameDatasetAction",
-                    "action_arguments": {
-                        "newname": "Annotated gene report"
-                    }
+            "id": 4,
+            "input_connections": {
+                "infile1": {
+                    "id": 0,
+                    "output_name": "output"
+                },
+                "infile2": {
+                    "id": 1,
+                    "output_name": "output"
                 }
             },
+            "inputs": [],
             "label": null,
-            "inputs": [
+            "name": "Join",
+            "outputs": [
                 {
-                    "name": "param_input",
-                    "description": "runtime parameter for tool Column arrange"
+                    "name": "output",
+                    "type": "input"
                 }
             ],
             "position": {
-                "top": 562.46875,
-                "left": 844.84375
+                "left": 628,
+                "top": 133
             },
+            "post_job_actions": {
+                "ChangeDatatypeActionoutput": {
+                    "action_arguments": {
+                        "newtype": "tabular"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "output"
+                },
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                },
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "#{infile1|basename} annotated with UniProt  cancer genes"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"column1\": \"1\", \"column2\": \"1\", \"empty_string_filler\": \"0\", \"header\": \"true\", \"ignore_case\": \"false\", \"infile1\": {\"__class__\": \"ConnectedValue\"}, \"infile2\": {\"__class__\": \"ConnectedValue\"}, \"jointype\": \"-a 1\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.1",
+            "type": "tool",
+            "uuid": "76b0e519-fc3f-4756-950f-69a326c6fcd5",
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "infile1": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "infile2": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Join",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 628,
+                "top": 369
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionoutput": {
+                    "action_arguments": {
+                        "newtype": "tabular"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "output"
+                },
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                },
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "#{infile1|basename}, CGI genes"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"column1\": \"1\", \"column2\": \"1\", \"empty_string_filler\": \"0\", \"header\": \"true\", \"ignore_case\": \"false\", \"infile1\": {\"__class__\": \"ConnectedValue\"}, \"infile2\": {\"__class__\": \"ConnectedValue\"}, \"jointype\": \"-a 1\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.1",
+            "type": "tool",
+            "uuid": "533bf5d3-4dc9-41cc-a384-e7ed29d6592e",
+            "workflow_outputs": []
+        },
+        "6": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
+            "errors": null,
+            "id": 6,
+            "input_connections": {
+                "infile1": {
+                    "id": 5,
+                    "output_name": "output"
+                },
+                "infile2": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Join",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 628,
+                "top": 509
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionoutput": {
+                    "action_arguments": {
+                        "newtype": "tabular"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "output"
+                },
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                },
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "#{infile1|basename}, and CIViC gene summaries"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_easyjoin_tool/1.1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"column1\": \"1\", \"column2\": \"3\", \"empty_string_filler\": \".\", \"header\": \"true\", \"ignore_case\": \"false\", \"infile1\": {\"__class__\": \"ConnectedValue\"}, \"infile2\": {\"__class__\": \"ConnectedValue\"}, \"jointype\": \"-a 1\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.1",
+            "type": "tool",
+            "uuid": "2d7e28ba-fba6-4e20-96d3-08727d3864f1",
+            "workflow_outputs": []
+        },
+        "7": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/column_arrange_by_header/bg_column_arrange_by_header/0.2",
-            "type": "tool"
+            "errors": null,
+            "id": 7,
+            "input_connections": {
+                "param_input": {
+                    "id": 6,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Column arrange",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 886,
+                "top": 509
+            },
+            "post_job_actions": {
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "Annotated gene report"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/column_arrange_by_header/bg_column_arrange_by_header/0.2",
+            "tool_shed_repository": {
+                "changeset_revision": "6c6d26ff01ff",
+                "name": "column_arrange_by_header",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"discard_remaining\": \"true\", \"param_input\": {\"__class__\": \"ConnectedValue\"}, \"rep_param_columns\": [{\"__index__\": 0, \"param_column\": \"gene\"}, {\"__index__\": 1, \"param_column\": \"chrom\"}, {\"__index__\": 2, \"param_column\": \"synonym\"}, {\"__index__\": 3, \"param_column\": \"hgnc_id\"}, {\"__index__\": 4, \"param_column\": \"entrez_id\"}, {\"__index__\": 5, \"param_column\": \"rvis_pct\"}, {\"__index__\": 6, \"param_column\": \"is_OG\"}, {\"__index__\": 7, \"param_column\": \"is_TS\"}, {\"__index__\": 8, \"param_column\": \"in_cgi_biomarkers\"}, {\"__index__\": 9, \"param_column\": \"clinvar_gene_phenotype\"}, {\"__index__\": 10, \"param_column\": \"gene_civic_url\"}, {\"__index__\": 11, \"param_column\": \"description\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.2",
+            "type": "tool",
+            "uuid": "56ed2658-4fda-4baf-94ac-5897d0bed325",
+            "workflow_outputs": [
+                {
+                    "label": "an_gene_report",
+                    "output_name": "output",
+                    "uuid": "6b7f7a7e-937c-41c3-9fab-6427a0d010cf"
+                }
+            ]
         }
     },
-    "annotation": "",
-    "a_galaxy_workflow": "true"
+    "tags": [
+        "MIRACUM",
+        "SUB"
+    ],
+    "uuid": "0ee5c684-a488-4774-ac4a-99f874855acb",
+    "version": 7
 }
