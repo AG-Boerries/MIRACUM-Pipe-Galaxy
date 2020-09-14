@@ -20,8 +20,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 288.51666259765625,
-                "top": 662.3999938964844
+                "left": 249.99998474121094,
+                "top": 726.6666717529297
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -32,7 +32,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "d29de79a-8be8-4477-a78b-e9b8a1c0d10c"
+                    "uuid": "6f46a40e-b2c7-4918-b94d-b0f459ee4ddc"
                 }
             ]
         },
@@ -52,8 +52,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 285.0500030517578,
-                "top": 762.8500061035156
+                "left": 249.99998474121094,
+                "top": 826.6666870117188
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
@@ -64,7 +64,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "5095c157-b1f9-4efe-9a57-233a2d33bcef"
+                    "uuid": "21a92683-3b7a-47c4-b024-ca5f8612e994"
                 }
             ]
         },
@@ -84,8 +84,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 538.3500061035156,
-                "top": 662.3999938964844
+                "left": 508.066650390625,
+                "top": 726.6666717529297
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -96,7 +96,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "f5b1a09a-5ea7-4db9-86ec-a216e487f333"
+                    "uuid": "73be20c6-15d4-4b91-b641-ee90f0ecbab7"
                 }
             ]
         },
@@ -116,8 +116,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 538.6499938964844,
-                "top": 762.8500061035156
+                "left": 508.066650390625,
+                "top": 826.6666870117188
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -128,7 +128,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "9241b379-ae2b-4983-8000-2c2f1ef643fd"
+                    "uuid": "6ea8ee2f-c024-43f8-9915-01c93aa0dd57"
                 }
             ]
         },
@@ -148,8 +148,8 @@
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 283.51666259765625,
-                "top": 944.5166625976562
+                "left": 249.99998474121094,
+                "top": 1011.6666870117188
             },
             "tool_id": null,
             "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
@@ -160,7 +160,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "2a38b383-5a57-4fbb-b176-a5a60fbb584a"
+                    "uuid": "694ce15c-b709-46c1-bff3-bf0d0c1ea275"
                 }
             ]
         },
@@ -173,26 +173,26 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "Tumor purity estimate"
+                    "name": "TUMOR forward reads"
                 }
             ],
-            "label": "Tumor purity estimate",
-            "name": "Input parameter",
+            "label": "TUMOR forward reads",
+            "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 282.98333740234375,
-                "top": 1039.5166625976562
+                "left": 508.066650390625,
+                "top": 1011.6666870117188
             },
             "tool_id": null,
-            "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
+            "tool_state": "{\"optional\": false}",
             "tool_version": null,
-            "type": "parameter_input",
-            "uuid": "c007bc33-cfc9-4687-99f4-3ac80ca35ca3",
+            "type": "data_input",
+            "uuid": "d6092720-0082-4164-9d79-95a93185be30",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "981775bd-5809-4ee3-9805-011e9737e796"
+                    "uuid": "58ce87ed-336a-45b0-b906-726cdeaa1b36"
                 }
             ]
         },
@@ -205,26 +205,26 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "TUMOR forward reads"
+                    "name": "Tumor purity estimate"
                 }
             ],
-            "label": "TUMOR forward reads",
-            "name": "Input dataset",
+            "label": "Tumor purity estimate",
+            "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 540.0166625976562,
-                "top": 944.5166625976562
+                "left": 249.99998474121094,
+                "top": 1111.6666870117188
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false}",
+            "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
             "tool_version": null,
-            "type": "data_input",
-            "uuid": "d6092720-0082-4164-9d79-95a93185be30",
+            "type": "parameter_input",
+            "uuid": "c007bc33-cfc9-4687-99f4-3ac80ca35ca3",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "3a1f9e0b-5ebe-4ab1-afea-7a94275fc60b"
+                    "uuid": "8dc22caf-5151-4fb2-bf0b-4eb3bbab55d1"
                 }
             ]
         },
@@ -244,8 +244,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 541.9833374023438,
-                "top": 1039.5166625976562
+                "left": 508.066650390625,
+                "top": 1111.6666870117188
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -256,7 +256,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "b3047f96-5bbb-478e-872d-76e641c16061"
+                    "uuid": "371d6148-2dfe-457b-9e96-94b13bb87e9a"
                 }
             ]
         },
@@ -276,8 +276,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 534.6499938964844,
-                "top": 1266.3333129882812
+                "left": 508.066650390625,
+                "top": 1306.6666870117188
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -288,7 +288,7 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "aedaf5f0-72eb-4639-9e72-8c5feab4ba5c"
+                    "uuid": "c2f2563c-6a1a-47a8-86d7-46c0b141fe70"
                 }
             ]
         },
@@ -329,8 +329,8 @@
                 }
             ],
             "position": {
-                "left": 806.88330078125,
-                "top": 662.3999938964844
+                "left": 766.0499877929688,
+                "top": 726.6666717529297
             },
             "post_job_actions": {
                 "HideDatasetActionfastq_out_r1_unpaired": {
@@ -385,14 +385,14 @@
             "uuid": "5e34d0fe-5016-4c0a-abb7-9c720583c5b2",
             "workflow_outputs": [
                 {
+                    "label": "FastQ out R2 paired Normal",
+                    "output_name": "fastq_out_r2_paired",
+                    "uuid": "57ac4517-9f06-4e48-8345-59642739a235"
+                },
+                {
                     "label": "FastQ out R1 paired Normal",
                     "output_name": "fastq_out_r1_paired",
                     "uuid": "a8bf36d8-1828-4467-858d-88c29e14fd30"
-                },
-                {
-                    "label": "FastQ out R2 paired Normal",
-                    "output_name": "fastq_out_r2_paired",
-                    "uuid": "e4a04efa-1eb1-4c0b-98c0-529995459e68"
                 }
             ]
         },
@@ -411,7 +411,7 @@
                     "output_name": "output"
                 },
                 "Tumor sample forward reads": {
-                    "id": 6,
+                    "id": 5,
                     "input_subworkflow_step_id": 2,
                     "output_name": "output"
                 },
@@ -426,8 +426,8 @@
             "name": "MIRACUM - Quality control",
             "outputs": [],
             "position": {
-                "left": 810.0166625976562,
-                "top": 205.26666259765625
+                "left": 766.0499877929688,
+                "top": 266.66668701171875
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -909,8 +909,8 @@
             "workflow_outputs": [
                 {
                     "label": null,
-                    "output_name": "post_fastqc_txt_tumor_fw",
-                    "uuid": "5a239d7a-c67f-4abf-be80-9874c56f80dc"
+                    "output_name": "post_fastqc_txt_normal_rv",
+                    "uuid": "2133a520-bab6-4d77-8e9b-cd971b4535bb"
                 },
                 {
                     "label": null,
@@ -919,8 +919,8 @@
                 },
                 {
                     "label": null,
-                    "output_name": "post_fastqc_txt_normal_rv",
-                    "uuid": "2133a520-bab6-4d77-8e9b-cd971b4535bb"
+                    "output_name": "post_fastqc_txt_tumor_fw",
+                    "uuid": "5a239d7a-c67f-4abf-be80-9874c56f80dc"
                 },
                 {
                     "label": null,
@@ -936,7 +936,7 @@
             "id": 11,
             "input_connections": {
                 "readtype|fastq_r1_in": {
-                    "id": 6,
+                    "id": 5,
                     "output_name": "output"
                 },
                 "readtype|fastq_r2_in": {
@@ -966,8 +966,8 @@
                 }
             ],
             "position": {
-                "left": 807.88330078125,
-                "top": 944.5166625976562
+                "left": 766.0499877929688,
+                "top": 1011.6666870117188
             },
             "post_job_actions": {
                 "HideDatasetActionfastq_out_r1_unpaired": {
@@ -1022,14 +1022,14 @@
             "uuid": "a87f957f-452e-42e3-96b0-f4705b427bf6",
             "workflow_outputs": [
                 {
-                    "label": "FastQ out R2 paired Tumor",
-                    "output_name": "fastq_out_r2_paired",
-                    "uuid": "affc1402-7147-44df-bb50-5b641c30b497"
-                },
-                {
                     "label": "FastQ out R1 paired Tumor",
                     "output_name": "fastq_out_r1_paired",
                     "uuid": "45346d4d-1ee0-4a38-9a6a-94a09616b3f4"
+                },
+                {
+                    "label": "FastQ out R2 paired Tumor",
+                    "output_name": "fastq_out_r2_paired",
+                    "uuid": "affc1402-7147-44df-bb50-5b641c30b497"
                 }
             ]
         },
@@ -1048,7 +1048,7 @@
                     "output_name": "output"
                 },
                 "Tumor sample forward reads": {
-                    "id": 6,
+                    "id": 5,
                     "input_subworkflow_step_id": 2,
                     "output_name": "output"
                 },
@@ -1063,8 +1063,8 @@
             "name": "MIRACUM - Quality control",
             "outputs": [],
             "position": {
-                "left": 1406.9833984375,
-                "top": 205.26666259765625
+                "left": 1281.9833374023438,
+                "top": 266.66668701171875
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -1546,6 +1546,11 @@
             "workflow_outputs": [
                 {
                     "label": null,
+                    "output_name": "post_fastqc_txt_tumor_rv",
+                    "uuid": "b5dd8583-a418-494a-93f3-a09a1ae3e818"
+                },
+                {
+                    "label": null,
                     "output_name": "post_fastqc_txt_normal_rv",
                     "uuid": "3fe03afd-3715-44b2-b1f4-5c976c8c9049"
                 },
@@ -1558,11 +1563,6 @@
                     "label": null,
                     "output_name": "post_fastqc_txt_tumor_fw",
                     "uuid": "09284510-d69e-43f8-b2ea-9910e34b5deb"
-                },
-                {
-                    "label": null,
-                    "output_name": "post_fastqc_txt_tumor_rv",
-                    "uuid": "b5dd8583-a418-494a-93f3-a09a1ae3e818"
                 }
             ]
         },
@@ -1599,8 +1599,8 @@
                 }
             ],
             "position": {
-                "left": 1106.9833374023438,
-                "top": 662.3999938964844
+                "left": 1024,
+                "top": 726.6666717529297
             },
             "post_job_actions": {
                 "RenameDatasetActionbam_output": {
@@ -1671,8 +1671,8 @@
                 }
             ],
             "position": {
-                "left": 1107.2666625976562,
-                "top": 205.26666259765625
+                "left": 1024,
+                "top": 266.66668701171875
             },
             "post_job_actions": {
                 "HideDatasetActionplots": {
@@ -1745,8 +1745,8 @@
                 }
             ],
             "position": {
-                "left": 1107.7999877929688,
-                "top": 944.5166625976562
+                "left": 1024,
+                "top": 1011.6666870117188
             },
             "post_job_actions": {
                 "RenameDatasetActionbam_output": {
@@ -1817,8 +1817,8 @@
                 }
             ],
             "position": {
-                "left": 1685.316650390625,
-                "top": 205.26666259765625
+                "left": 1539.9999389648438,
+                "top": 266.66668701171875
             },
             "post_job_actions": {
                 "HideDatasetActionplots": {
@@ -1860,72 +1860,7 @@
         },
         "17": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
-            "errors": null,
             "id": 17,
-            "input_connections": {
-                "input1": {
-                    "id": 13,
-                    "output_name": "bam_output"
-                },
-                "stats_regions|regions": {
-                    "id": 8,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [],
-            "label": null,
-            "name": "QualiMap BamQC",
-            "outputs": [
-                {
-                    "name": "raw_data",
-                    "type": "input"
-                },
-                {
-                    "name": "output_html",
-                    "type": "html"
-                }
-            ],
-            "position": {
-                "left": 806.7166748046875,
-                "top": 1266.3333129882812
-            },
-            "post_job_actions": {
-                "RenameDatasetActionoutput_html": {
-                    "action_arguments": {
-                        "newname": "QC for mapped reads of Normal"
-                    },
-                    "action_type": "RenameDatasetAction",
-                    "output_name": "output_html"
-                }
-            },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
-            "tool_shed_repository": {
-                "changeset_revision": "4a89c6f84425",
-                "name": "qualimap_bamqc",
-                "owner": "iuc",
-                "tool_shed": "toolshed.g2.bx.psu.edu"
-            },
-            "tool_state": "{\"duplicate_skipping\": [\"0\"], \"input1\": {\"__class__\": \"ConnectedValue\"}, \"per_base_coverage\": \"false\", \"plot_specific\": {\"n_bins\": \"1000\", \"paint_chromosome_limits\": \"true\", \"genome_gc_distr\": null, \"homopolymer_size\": \"3\"}, \"stats_regions\": {\"region_select\": \"custom_regions\", \"__current_case__\": 1, \"regions\": {\"__class__\": \"ConnectedValue\"}, \"outside_stats\": \"false\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "2.2.2c+galaxy1",
-            "type": "tool",
-            "uuid": "617bad6c-ebfe-4fcf-8ea2-519d4f8e064d",
-            "workflow_outputs": [
-                {
-                    "label": "bamqc_raw_normal",
-                    "output_name": "raw_data",
-                    "uuid": "12eef2ee-7240-4c21-80ca-93e80608ac0e"
-                },
-                {
-                    "label": "bamqc_html_normal",
-                    "output_name": "output_html",
-                    "uuid": "fbe966f8-9302-455a-aa0f-d17ecf647090"
-                }
-            ]
-        },
-        "18": {
-            "annotation": "",
-            "id": 18,
             "input_connections": {
                 "post_input_data": {
                     "id": 13,
@@ -1938,8 +1873,8 @@
             "name": "MIRACUM - mapped reads postprocessing",
             "outputs": [],
             "position": {
-                "left": 1421,
-                "top": 662.3999938964844
+                "left": 1281.9833374023438,
+                "top": 726.6666717529297
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -2354,8 +2289,8 @@
             "workflow_outputs": [
                 {
                     "label": null,
-                    "output_name": "post_sam_stats_proc",
-                    "uuid": "3bfd2102-b96c-440e-8de5-26fb41ebc764"
+                    "output_name": "post_sam_view_proc",
+                    "uuid": "d91f4544-6fde-472d-88d0-ccd34f83e8d7"
                 },
                 {
                     "label": null,
@@ -2364,19 +2299,19 @@
                 },
                 {
                     "label": null,
-                    "output_name": "post_sam_view_proc",
-                    "uuid": "d91f4544-6fde-472d-88d0-ccd34f83e8d7"
+                    "output_name": "post_sam_stats_proc",
+                    "uuid": "3bfd2102-b96c-440e-8de5-26fb41ebc764"
                 }
             ]
         },
-        "19": {
+        "18": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
             "errors": null,
-            "id": 19,
+            "id": 18,
             "input_connections": {
                 "input1": {
-                    "id": 15,
+                    "id": 13,
                     "output_name": "bam_output"
                 },
                 "stats_regions|regions": {
@@ -2398,13 +2333,13 @@
                 }
             ],
             "position": {
-                "left": 1108.183349609375,
-                "top": 1266.7333374023438
+                "left": 766.0499877929688,
+                "top": 1306.6666870117188
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput_html": {
                     "action_arguments": {
-                        "newname": "QC for mapped reads of Tumor"
+                        "newname": "QC for mapped reads of Normal"
                     },
                     "action_type": "RenameDatasetAction",
                     "output_name": "output_html"
@@ -2420,23 +2355,23 @@
             "tool_state": "{\"duplicate_skipping\": [\"0\"], \"input1\": {\"__class__\": \"ConnectedValue\"}, \"per_base_coverage\": \"false\", \"plot_specific\": {\"n_bins\": \"1000\", \"paint_chromosome_limits\": \"true\", \"genome_gc_distr\": null, \"homopolymer_size\": \"3\"}, \"stats_regions\": {\"region_select\": \"custom_regions\", \"__current_case__\": 1, \"regions\": {\"__class__\": \"ConnectedValue\"}, \"outside_stats\": \"false\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "2.2.2c+galaxy1",
             "type": "tool",
-            "uuid": "1f5e90ff-b328-460f-ac74-ecde4d9973ce",
+            "uuid": "617bad6c-ebfe-4fcf-8ea2-519d4f8e064d",
             "workflow_outputs": [
                 {
-                    "label": "bamqc_raw_tumor",
-                    "output_name": "raw_data",
-                    "uuid": "187f51e9-8912-41c8-8dea-55d75d160a2f"
+                    "label": "bamqc_html_normal",
+                    "output_name": "output_html",
+                    "uuid": "fbe966f8-9302-455a-aa0f-d17ecf647090"
                 },
                 {
-                    "label": "bamqc_html_tumor",
-                    "output_name": "output_html",
-                    "uuid": "64104618-6fac-46e1-9def-a7d19fdbbb43"
+                    "label": "bamqc_raw_normal",
+                    "output_name": "raw_data",
+                    "uuid": "12eef2ee-7240-4c21-80ca-93e80608ac0e"
                 }
             ]
         },
-        "20": {
+        "19": {
             "annotation": "",
-            "id": 20,
+            "id": 19,
             "input_connections": {
                 "post_input_data": {
                     "id": 15,
@@ -2449,8 +2384,8 @@
             "name": "MIRACUM - mapped reads postprocessing",
             "outputs": [],
             "position": {
-                "left": 1406,
-                "top": 944.5166625976562
+                "left": 1281.9833374023438,
+                "top": 1011.6666870117188
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -2880,6 +2815,71 @@
                 }
             ]
         },
+        "20": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
+            "errors": null,
+            "id": 20,
+            "input_connections": {
+                "input1": {
+                    "id": 15,
+                    "output_name": "bam_output"
+                },
+                "stats_regions|regions": {
+                    "id": 8,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "QualiMap BamQC",
+            "outputs": [
+                {
+                    "name": "raw_data",
+                    "type": "input"
+                },
+                {
+                    "name": "output_html",
+                    "type": "html"
+                }
+            ],
+            "position": {
+                "left": 1024,
+                "top": 1306.6666870117188
+            },
+            "post_job_actions": {
+                "RenameDatasetActionoutput_html": {
+                    "action_arguments": {
+                        "newname": "QC for mapped reads of Tumor"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output_html"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/qualimap_bamqc/qualimap_bamqc/2.2.2c+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "4a89c6f84425",
+                "name": "qualimap_bamqc",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"duplicate_skipping\": [\"0\"], \"input1\": {\"__class__\": \"ConnectedValue\"}, \"per_base_coverage\": \"false\", \"plot_specific\": {\"n_bins\": \"1000\", \"paint_chromosome_limits\": \"true\", \"genome_gc_distr\": null, \"homopolymer_size\": \"3\"}, \"stats_regions\": {\"region_select\": \"custom_regions\", \"__current_case__\": 1, \"regions\": {\"__class__\": \"ConnectedValue\"}, \"outside_stats\": \"false\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.2.2c+galaxy1",
+            "type": "tool",
+            "uuid": "1f5e90ff-b328-460f-ac74-ecde4d9973ce",
+            "workflow_outputs": [
+                {
+                    "label": "bamqc_html_tumor",
+                    "output_name": "output_html",
+                    "uuid": "64104618-6fac-46e1-9def-a7d19fdbbb43"
+                },
+                {
+                    "label": "bamqc_raw_tumor",
+                    "output_name": "raw_data",
+                    "uuid": "187f51e9-8912-41c8-8dea-55d75d160a2f"
+                }
+            ]
+        },
         "21": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/varscan_somatic/varscan_somatic/2.4.3.6",
@@ -2887,7 +2887,7 @@
             "id": 21,
             "input_connections": {
                 "normal_bam": {
-                    "id": 18,
+                    "id": 17,
                     "output_name": "post_sam_view_proc"
                 },
                 "normal_purity": {
@@ -2895,11 +2895,11 @@
                     "output_name": "output"
                 },
                 "tumor_bam": {
-                    "id": 20,
+                    "id": 19,
                     "output_name": "post_sam_view_proc"
                 },
                 "tumor_purity": {
-                    "id": 5,
+                    "id": 6,
                     "output_name": "output"
                 }
             },
@@ -2913,8 +2913,8 @@
                 }
             ],
             "position": {
-                "left": 1704.6500244140625,
-                "top": 741.8166656494141
+                "left": 1649.9999389648438,
+                "top": 806.6666717529297
             },
             "post_job_actions": {
                 "RenameDatasetActionoutput": {
@@ -2943,11 +2943,184 @@
                     "uuid": "19f56697-8ad7-4d1d-a08d-194fea1730e2"
                 }
             ]
+        },
+        "22": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/control_freec/control_freec/11.6+galaxy1",
+            "errors": null,
+            "id": 22,
+            "input_connections": {
+                "WGS_WES|input_capture_file": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "WGS_WES|input_control_file": {
+                    "id": 17,
+                    "output_name": "post_sam_view_proc"
+                },
+                "WGS_WES|input_sample_file": {
+                    "id": 19,
+                    "output_name": "post_sam_view_proc"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Control-FREEC",
+            "outputs": [
+                {
+                    "name": "out_sample_raw",
+                    "type": "tabular"
+                },
+                {
+                    "name": "out_control_raw",
+                    "type": "tabular"
+                },
+                {
+                    "name": "out_sample_coord",
+                    "type": "tabular"
+                },
+                {
+                    "name": "out_sample_info",
+                    "type": "txt"
+                },
+                {
+                    "name": "out_sample_ratio",
+                    "type": "tabular"
+                },
+                {
+                    "name": "out_sample_subclones",
+                    "type": "txt"
+                },
+                {
+                    "name": "out_gc_profile",
+                    "type": "tabular"
+                },
+                {
+                    "name": "out_ratio_log2_circos",
+                    "type": "tabular"
+                },
+                {
+                    "name": "out_chr_sorted_circos",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1649.9999389648438,
+                "top": 1136.6666870117188
+            },
+            "post_job_actions": {
+                "HideDatasetActionout_chr_sorted_circos": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_chr_sorted_circos"
+                },
+                "HideDatasetActionout_gc_profile": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_gc_profile"
+                },
+                "HideDatasetActionout_ratio_log2_circos": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_ratio_log2_circos"
+                },
+                "HideDatasetActionout_sample_coord": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_sample_coord"
+                },
+                "HideDatasetActionout_sample_info": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_sample_info"
+                },
+                "HideDatasetActionout_sample_subclones": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_sample_subclones"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/control_freec/control_freec/11.6+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "2c6349fb175c",
+                "name": "control_freec",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"WGS_WES\": {\"WGS_WES_selector\": \"WES\", \"__current_case__\": 1, \"input_sample_file\": {\"__class__\": \"ConnectedValue\"}, \"input_control_file\": {\"__class__\": \"ConnectedValue\"}, \"input_capture_file\": {\"__class__\": \"ConnectedValue\"}, \"mateOrientation_selector\": \"FR\", \"advanced_settings\": {\"degree\": \"1\", \"forceGCcontentNormalization\": \"1\", \"minCNAlength\": \"3\", \"minimalSubclonePresence\": \"30\", \"readCountThreshold\": \"50\", \"window_section\": {\"window\": \"0\", \"step\": \"0\"}, \"printNA\": \"false\", \"noisyData\": \"true\", \"breakPointThreshold\": \"1.2\", \"breakPointType\": \"4\", \"coefficientOfVariation\": \"0.05\", \"contaminationAdjustment\": \"false\", \"contamination\": \"0.0\", \"intercept\": \"1\", \"minMappabilityPerWindow\": \"0.85\", \"minExpectedGC\": \"0.35\", \"maxExpectedGC\": \"0.55\", \"ploidy\": \"2\", \"sex\": \"XY\", \"telocentromeric\": \"50000\"}}, \"output_section\": {\"BedGraphOutput\": \"false\", \"makeGraph\": \"false\", \"circos_data\": \"true\"}, \"reference_source\": {\"ref_selector\": \"cached\", \"__current_case__\": 0, \"ref\": \"hg19\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "11.6+galaxy1",
+            "type": "tool",
+            "uuid": "bfdb5a8a-5dab-4326-b3cc-66923d6fb882",
+            "workflow_outputs": [
+                {
+                    "label": "freec_tumor_raw",
+                    "output_name": "out_sample_raw",
+                    "uuid": "5093cb6b-70f9-4ced-b7f9-2b0f9cb6abaf"
+                },
+                {
+                    "label": "freec_normal_raw",
+                    "output_name": "out_control_raw",
+                    "uuid": "07bc6932-9e6c-4b77-944f-403e56dffdd0"
+                },
+                {
+                    "label": "freec_ratio_pred_cn",
+                    "output_name": "out_sample_ratio",
+                    "uuid": "eedb0cc1-00c4-49ba-9fb9-eb6690c8c21d"
+                }
+            ]
+        },
+        "23": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7",
+            "errors": null,
+            "id": 23,
+            "input_connections": {
+                "reference_genome|ref|input_karyotype": {
+                    "id": 22,
+                    "output_name": "out_chr_sorted_circos"
+                },
+                "sec_tdd|data_0|plot_format|data_source": {
+                    "id": 22,
+                    "output_name": "out_ratio_log2_circos"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Circos",
+            "outputs": [
+                {
+                    "name": "output_png",
+                    "type": "png"
+                }
+            ],
+            "position": {
+                "left": 1908.0166625976562,
+                "top": 1136.6666870117188
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/circos/circos/0.69.8+galaxy7",
+            "tool_shed_repository": {
+                "changeset_revision": "e6cbe3190642",
+                "name": "circos",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"ideogram\": {\"limit_chromosomes\": \"\", \"chromosomes_reverse\": \"\", \"units\": \"mb\", \"spacing\": \"3.0\", \"pairwise_spacing\": [], \"radius\": \"0.8\", \"thickness\": \"45.0\", \"angle_offset\": \"-90\", \"angle_orientation\": \"clockwise\", \"ideogram_labels\": {\"show_label\": \"true\", \"radius_offset\": \"0.01\", \"size\": \"40\", \"parallel\": \"true\"}, \"bands\": {\"show_bands\": \"true\", \"fill_bands\": \"true\", \"band_transparency\": \"3\", \"band_stroke_thickness\": \"0\", \"band_stroke_color\": \"#000000\"}}, \"limits\": {\"max_ticks\": \"5000\", \"max_ideograms\": \"200\", \"max_links\": \"2500000\", \"max_points_per_track\": \"2500000\"}, \"outputs\": {\"png\": \"true\", \"svg\": \"false\", \"tar\": \"false\"}, \"plot_options\": {\"background\": {\"background_select\": \"color\", \"__current_case__\": 1, \"background_color\": \"#ffffff\"}, \"radius\": \"1500\", \"colour_profile\": null}, \"reference_genome\": {\"ref\": {\"ref_source\": \"karyotype\", \"__current_case__\": 3, \"input_karyotype\": {\"__class__\": \"ConnectedValue\"}}}, \"scaling\": {\"zooms\": []}, \"sec_links\": {\"data\": []}, \"sec_tdd\": {\"data\": [{\"__index__\": 0, \"r1\": \"0.95\", \"r0\": \"0.8\", \"zdepth\": \"0\", \"plot_format\": {\"plot_format_select\": \"scatter\", \"__current_case__\": 5, \"data_source\": {\"__class__\": \"ConnectedValue\"}, \"format_specific\": {\"glyph\": \"circle\", \"glyph_size\": \"4\", \"fill_color\": \"#555555\", \"fill_color_alpha\": \"1.0\", \"stroke_color\": \"#000000\", \"stroke_color_alpha\": \"1.0\", \"stroke_thickness\": \"0\"}}, \"orientation\": \"false\", \"minsize\": \"0.0\", \"minmax\": {\"minmax_select\": \"no\", \"__current_case__\": 1}, \"sec_rule\": {\"rules\": [{\"__index__\": 0, \"conditions\": [{\"__index__\": 0, \"application\": {\"application_select\": \"value\", \"__current_case__\": 4, \"pos_gt\": \"0.0\", \"pos_lt\": \"\"}}], \"actions\": [{\"__index__\": 0, \"action\": {\"action_select\": \"fill_color\", \"__current_case__\": 2, \"action_value\": \"#c0504d\"}}], \"continue_flow\": \"false\"}, {\"__index__\": 1, \"conditions\": [{\"__index__\": 0, \"application\": {\"application_select\": \"value\", \"__current_case__\": 4, \"pos_gt\": \"\", \"pos_lt\": \"0.0\"}}], \"actions\": [{\"__index__\": 0, \"action\": {\"action_select\": \"fill_color\", \"__current_case__\": 2, \"action_value\": \"#4f81bd\"}}], \"continue_flow\": \"false\"}]}, \"sec_axes\": {\"axes\": [{\"__index__\": 0, \"radial_position\": {\"select\": \"data\", \"__current_case__\": 1, \"spacing\": \"1.0\"}, \"y0\": \"-4.0\", \"y1\": \"4.0\", \"color\": \"#bfbfbf\", \"color_alpha\": \"1.0\", \"thickness\": \"2\"}], \"only_if_data\": \"always\"}, \"sec_bkgs\": {\"backgrounds\": [], \"only_if_data\": \"always\"}}]}, \"ticks\": {\"radius\": \"1.0\", \"skip_first_label\": \"false\", \"skip_last_label\": \"false\", \"tick_group\": []}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.69.8+galaxy7",
+            "type": "tool",
+            "uuid": "548ea1d0-aca4-4c77-a828-addbc3881664",
+            "workflow_outputs": [
+                {
+                    "label": "circos_plot",
+                    "output_name": "output_png",
+                    "uuid": "fe6060f7-dd4e-4116-b362-0e594f78ad9e"
+                }
+            ]
         }
     },
     "tags": [
         "MIRACUM"
     ],
-    "uuid": "18e098df-f38e-4366-8d5d-85c68a10ad18",
-    "version": 48
+    "uuid": "3daba2a6-5b59-4467-84ae-4ee034a2fa95",
+    "version": 53
 }
