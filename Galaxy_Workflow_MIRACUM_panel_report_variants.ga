@@ -1,8 +1,13 @@
 {
     "a_galaxy_workflow": "true",
-    "annotation": "",
+    "uuid": "3831692e-6af9-4ded-875c-e41b9c15d6b9",
     "format-version": "0.1",
     "name": "MIRACUM - report panel variants",
+    "tags": [
+        "MIRACUM"
+    ],
+    "annotation": "Produce tabular and MAF (cBioportal-compatible) reports of annotated variants.",
+    "version": 6,
     "steps": {
         "0": {
             "annotation": "",
@@ -13,26 +18,26 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "GEMINI DB of variants"
+                    "name": "Sample identifier"
                 }
             ],
-            "label": "GEMINI DB of variants",
-            "name": "Input dataset",
+            "label": "Sample identifier",
+            "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 300,
-                "top": 273
+                "left": 299,
+                "top": 171
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false}",
+            "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
             "tool_version": null,
-            "type": "data_input",
-            "uuid": "8d4895fe-2819-42ef-bdb8-98ec6b28e29f",
+            "type": "parameter_input",
+            "uuid": "01d1b1b0-8a60-4ccf-bd25-76658f899aa9",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "b9b2bcbf-9b46-49dc-b60a-33df4bf7f140"
+                    "uuid": "45740d02-1349-49c8-ba4b-9dbd0b140456"
                 }
             ]
         },
@@ -45,26 +50,26 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "UniProt-annotated cancer genes"
+                    "name": "GEMINI DB of variants"
                 }
             ],
-            "label": "UniProt-annotated cancer genes",
+            "label": "GEMINI DB of variants",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 816,
-                "top": 143
+                "left": 300,
+                "top": 321
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "f57e3964-df71-49ea-bb1e-bfffe69068c8",
+            "uuid": "8d4895fe-2819-42ef-bdb8-98ec6b28e29f",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "f8279abf-1013-41bd-893c-78d7a5e017a2"
+                    "uuid": "9fdcc1fb-5215-455e-82c6-d6ed096d39b3"
                 }
             ]
         },
@@ -77,26 +82,26 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "CGI-listed genes"
+                    "name": "UniProt-annotated cancer genes"
                 }
             ],
-            "label": "CGI-listed genes",
+            "label": "UniProt-annotated cancer genes",
             "name": "Input dataset",
             "outputs": [],
             "position": {
                 "left": 816,
-                "top": 243
+                "top": 191
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "b8315850-9836-4e64-bea1-91a3de8757f0",
+            "uuid": "f57e3964-df71-49ea-bb1e-bfffe69068c8",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "5dda0a0e-c4d1-4c3b-8747-feeddb462be2"
+                    "uuid": "dc21ab9e-6919-4596-a862-cb903262c49b"
                 }
             ]
         },
@@ -109,6 +114,38 @@
             "inputs": [
                 {
                     "description": "",
+                    "name": "CGI-listed genes"
+                }
+            ],
+            "label": "CGI-listed genes",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 816,
+                "top": 291
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "b8315850-9836-4e64-bea1-91a3de8757f0",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "5a9ba6e6-0b30-45c1-864a-010d5198c636"
+                }
+            ]
+        },
+        "4": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
                     "name": "CIViC genes"
                 }
             ],
@@ -117,7 +154,7 @@
             "outputs": [],
             "position": {
                 "left": 816,
-                "top": 343
+                "top": 391
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false}",
@@ -128,17 +165,21 @@
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "8810bd8e-1b34-4883-ac5a-0008b00e911d"
+                    "uuid": "4be752a8-2a4d-481f-8dbb-11aa4a2401d0"
                 }
             ]
         },
-        "4": {
+        "5": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/gemini_query/gemini_query/0.20.1+galaxy1",
             "errors": null,
-            "id": 4,
+            "id": 5,
             "input_connections": {
                 "infile": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "query|oformat|report|tumor_sample_id": {
                     "id": 0,
                     "output_name": "output"
                 }
@@ -158,8 +199,8 @@
                 }
             ],
             "position": {
-                "left": 558,
-                "top": 143
+                "left": 560,
+                "top": 167
             },
             "post_job_actions": {
                 "RenameDatasetActionoutfile": {
@@ -184,7 +225,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"infile\": {\"__class__\": \"RuntimeValue\"}, \"query\": {\"interface\": \"basic\", \"__current_case__\": 0, \"filter_by_genotype\": [], \"filter_by_sample\": [], \"regions\": [], \"filter\": \"filter IS NULL AND qual >= 20 AND depth >= 200 AND aaf >= 0.05 AND impact_severity != 'LOW' AND max_aaf_all <= 0.1\", \"oformat\": {\"report\": {\"format\": \"maf\", \"__current_case__\": 7, \"header\": \"--header\", \"dgidb\": \"\", \"tumor_sample_name\": \"\", \"normal_sample_name\": \"\", \"tumor_sample_id\": \"Tumor\", \"norm_sample_id\": \"\", \"mutation_status\": {\"status_select\": \"Somatic\", \"__current_case__\": 0}, \"order_by\": \"Chromosome, Start_Position\", \"sort_order\": \" ASC\"}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"infile\": {\"__class__\": \"RuntimeValue\"}, \"query\": {\"interface\": \"basic\", \"__current_case__\": 0, \"filter_by_genotype\": [], \"filter_by_sample\": [], \"regions\": [], \"filter\": \"filter IS NULL AND qual >= 20 AND depth >= 200 AND aaf >= 0.05 AND impact_severity != 'LOW' AND max_aaf_all <= 0.1\", \"oformat\": {\"report\": {\"format\": \"maf\", \"__current_case__\": 7, \"header\": \"--header\", \"dgidb\": \"\", \"tumor_sample_name\": \"\", \"normal_sample_name\": \"\", \"tumor_sample_id\": {\"__class__\": \"ConnectedValue\"}, \"norm_sample_id\": \"\", \"mutation_status\": {\"status_select\": \"Somatic\", \"__current_case__\": 0}, \"order_by\": \"Chromosome, Start_Position\", \"sort_order\": \" ASC\"}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "0.20.1+galaxy1",
             "type": "tool",
             "uuid": "1e838b9e-c10b-4b5f-a01f-f082f78b4ea1",
@@ -196,14 +237,14 @@
                 }
             ]
         },
-        "5": {
+        "6": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/gemini_query/gemini_query/0.20.1+galaxy1",
             "errors": null,
-            "id": 5,
+            "id": 6,
             "input_connections": {
                 "infile": {
-                    "id": 0,
+                    "id": 1,
                     "output_name": "output"
                 }
             },
@@ -218,7 +259,7 @@
             ],
             "position": {
                 "left": 558,
-                "top": 273
+                "top": 321
             },
             "post_job_actions": {
                 "RenameDatasetActionoutfile": {
@@ -255,14 +296,14 @@
                 }
             ]
         },
-        "6": {
+        "7": {
             "annotation": "",
             "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/gemini_query/gemini_query/0.20.1+galaxy1",
             "errors": null,
-            "id": 6,
+            "id": 7,
             "input_connections": {
                 "infile": {
-                    "id": 0,
+                    "id": 1,
                     "output_name": "output"
                 }
             },
@@ -277,7 +318,7 @@
             ],
             "position": {
                 "left": 558,
-                "top": 400
+                "top": 448
             },
             "post_job_actions": {
                 "HideDatasetActionoutfile": {
@@ -313,27 +354,27 @@
             "uuid": "440c7cc8-7d98-4791-9482-b3b3e13a4040",
             "workflow_outputs": []
         },
-        "7": {
+        "8": {
             "annotation": "",
-            "id": 7,
+            "id": 8,
             "input_connections": {
                 "CGI Genes": {
-                    "id": 2,
+                    "id": 3,
                     "input_subworkflow_step_id": 2,
                     "output_name": "output"
                 },
                 "CIViC Gene Summaries": {
-                    "id": 3,
+                    "id": 4,
                     "input_subworkflow_step_id": 3,
                     "output_name": "output"
                 },
                 "Gene-level Report": {
-                    "id": 6,
+                    "id": 7,
                     "input_subworkflow_step_id": 0,
                     "output_name": "outfile"
                 },
                 "UniProt Cancer Genes": {
-                    "id": 1,
+                    "id": 2,
                     "input_subworkflow_step_id": 1,
                     "output_name": "output"
                 }
@@ -344,7 +385,7 @@
             "outputs": [],
             "position": {
                 "left": 1074,
-                "top": 400
+                "top": 448
             },
             "subworkflow": {
                 "a_galaxy_workflow": "true",
@@ -722,7 +763,7 @@
                 "tags": "",
                 "uuid": "0ee5c684-a488-4774-ac4a-99f874855acb"
             },
-            "tool_id": "d61df9b61fd01ed3",
+            "tool_id": "30194736da3661ab",
             "type": "subworkflow",
             "uuid": "025ad5bb-4859-4549-b89c-e775e5a106c4",
             "workflow_outputs": [
@@ -733,10 +774,5 @@
                 }
             ]
         }
-    },
-    "tags": [
-        "MIRACUM"
-    ],
-    "uuid": "8584b234-9e56-4218-bc0b-fa7f3bf27540",
-    "version": 5
+    }
 }
