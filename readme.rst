@@ -25,15 +25,15 @@ Tools
 .....
 
 The simplest way to get a Galaxy instance with all required tools up and
-running is to use our `<https://github.com/bgruening/docker-galaxy-exome-seq>
-preconfigured docker image`_. The current version of this image can be pulled
-from ``quay.io/bgruening/galaxy-exome-seq:miracum_19.01``.
+running is to use our `preconfigured docker image
+<https://github.com/bgruening/docker-galaxy-exome-seq>`_. The current version
+of this image can be pulled from
+``quay.io/bgruening/galaxy-exome-seq:miracum_19.01``.
 
 For other instances of Galaxy, you can use the `miracum_tools.yaml` file, which
 is part of this repo, to install all required tools at the expected versions
-with
-`<https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html>
-Ephemeris`__.
+with `Ephemeris
+<https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html>`__.
 
 Advanced Galaxy configuration
 .............................
@@ -42,8 +42,8 @@ Galaxy allows you to configure resource allocation for every single tool in the
 workflows. This is done via a `job_conf.xml` configuration file.
 
 You can read more about the syntax and options available in this config file in
-the corresponding `<https://docs.galaxyproject.org/en/master/admin/jobs.html>
-section of the Galaxy documentation`__.
+the corresponding `section of the Galaxy documentation
+<https://docs.galaxyproject.org/en/master/admin/jobs.html>`__.
 
 For the Miracum project specifically, this repo includes a
 `job_conf.xml.sample` file, with what we think are reasonable default settings
@@ -82,4 +82,3 @@ reflected in the containing workflow (which carries its own embedded copy of
 the subworkflow). To make your changes visible in the containing workflow, you
 need to remove the embedded subworkflow from it and add the edited version back
 in.
-
