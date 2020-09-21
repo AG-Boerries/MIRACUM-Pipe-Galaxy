@@ -154,6 +154,11 @@
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
             <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=1 --cpus-per-task=4</param>
         </destination>
+        <destination id="slurm-6c" runner="slurm">
+            <env file="/galaxy_venv/bin/activate"/>
+            <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
+            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=1 --cpus-per-task=6</param>
+        </destination>
         <destination id="slurm-8c" runner="slurm">
             <env file="/galaxy_venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
@@ -161,12 +166,12 @@
         </destination>
     </destinations>
     <tools>
-        <tool id="bowtie2" destination="slurm-4c"/>
-        <tool id="bwa_mem" destination="slurm-8c"/>
-        <tool id="lofreq_call" destination="slurm-8c"/>
-        <tool id="samtools_calmd" destination="slurm-4c"/>
-        <tool id="bamleftalign" destination="slurm-4c"/>
-        <tool id="gemini_load" destination="slurm-4c"/>
+        <tool id="trimmomatic" destination="slurm-6c"/>
+        <tool id="bwa_mem" destination="slurm-6c"/>
+        <tool id="samtools_calmd" destination="slurm-6c"/>
+        <tool id="varscan_somatic" destination="slurm-6c"/>
+        <tool id="lofreq_call" destination="slurm-6c"/>
+        <tool id="gemini_load" destination="slurm-6c"/>
     </tools>
 
     <limits>
