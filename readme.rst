@@ -18,7 +18,7 @@ order, to go from raw sequenced exome reads to annotated tabular variant
 reports.
 
 Note: If you're not planning to edit the workflows, there is no need for you to
-import any `Galaxy_Subworkflow_*.ga` workflow definition files since the main
+import any ``Galaxy_Subworkflow_*.ga`` workflow definition files since the main
 workflows have the subworkflows integrated into their definition files.
 
 Tools
@@ -46,7 +46,7 @@ the corresponding `section of the Galaxy documentation
 <https://docs.galaxyproject.org/en/master/admin/jobs.html>`__.
 
 For the Miracum project specifically, this repo includes a
-`job_conf.xml.sample` file, with what we think are reasonable default settings
+``job_conf.xml.sample`` file, with what we think are reasonable default settings
 for the workflows. The sample file assumes SLURM as your job scheduler (which
 comes included and completely set up with our docker image) and allocates
 multiple cores to the tools that profit from them.
@@ -54,12 +54,12 @@ multiple cores to the tools that profit from them.
 Of course, you may need to tailor the exact settings to your hardware resources
 or cluster specifications.
 
-To use the new configuration, copy the sample file to `config/job_conf.xml`
+To use the new configuration, copy the sample file to ``config/job_conf.xml``
 inside the Galaxy root folder. If you're using our docker image that place is
-`/export/galaxy-central/config/job_conf.xml` from inside the container (you can
-also put the file in a different location, as long as that location is
+``/export/galaxy-central/config/job_conf.xml`` from inside the container (you
+can also put the file in a different location, as long as that location is
 accessible from inside the container, and point Galaxy to this file by
-including `-e GALAXY_CONFIG_JOB_CONFIG_FILE=<path_to_the_job_conf_file>` in
+including ``-e GALAXY_CONFIG_JOB_CONFIG_FILE=<path_to_the_job_conf_file>`` in
 your container *run* command.
 
 
