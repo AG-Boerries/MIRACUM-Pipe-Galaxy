@@ -152,17 +152,17 @@
         <destination id="slurm-4c" runner="slurm">
             <env file="/galaxy_venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=1 --cpus-per-task=4</param>
+            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--nodes=1=1--ntasks=4 --ntasks-per-node=4</param>
         </destination>
         <destination id="slurm-6c" runner="slurm">
             <env file="/galaxy_venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=1 --cpus-per-task=6</param>
+            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--nodes=1=1 --ntasks=6 --ntasks-per-node=6</param>
         </destination>
         <destination id="slurm-8c" runner="slurm">
             <env file="/galaxy_venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=1 --cpus-per-task=8</param>
+            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--nodes=1=1 --ntasks=8 --ntasks-per-node=8</param>
         </destination>
     </destinations>
     <tools>
@@ -177,3 +177,4 @@
     <limits>
     </limits>
 </job_conf>
+
