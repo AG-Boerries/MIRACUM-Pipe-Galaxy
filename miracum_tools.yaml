@@ -9,6 +9,12 @@ tools:
   - 830961c48e42
   tool_panel_section_label: "Collection Operations"
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: split_file_to_collection
+  owner: bgruening
+  revisions:
+  - 6cbe2f30c2d7
+  tool_panel_section_label: "Collection Operations"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: compose_text_param
   owner: iuc
   revisions:
@@ -31,6 +37,12 @@ tools:
   owner: devteam
   revisions:
   - 13b6f0007d9e
+  tool_panel_section_label: textutil
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: datamash_transpose
+  owner: iuc
+  revisions:
+  - 22c2a1ac7ae3
   tool_panel_section_label: textutil
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: datamash_ops
