@@ -1,0 +1,108 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "MIRACUM - Prepare annotation data",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Downloaded annotation data as collection"
+                }
+            ],
+            "label": "Downloaded annotation data as collection",
+            "name": "Input dataset collection",
+            "outputs": [],
+            "position": {
+                "bottom": 298.5,
+                "height": 81,
+                "left": 378.5,
+                "right": 578.5,
+                "top": 217.5,
+                "width": 200,
+                "x": 378.5,
+                "y": 217.5
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"collection_type\": \"list\"}",
+            "tool_version": null,
+            "type": "data_collection_input",
+            "uuid": "cae7904c-d1bb-4a95-9b03-c8196204f489",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "da0a625c-fc71-472a-b972-e014419dc87e"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "__APPLY_RULES__",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "input": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Apply Rule to Collection",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Apply Rule to Collection",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 415.5,
+                "height": 132,
+                "left": 624.5,
+                "right": 824.5,
+                "top": 283.5,
+                "width": 200,
+                "x": 624.5,
+                "y": 283.5
+            },
+            "post_job_actions": {
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "Miracum annotation data"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "__APPLY_RULES__",
+            "tool_state": "{\"input\": {\"__class__\": \"RuntimeValue\"}, \"rules\": {\"mapping\": [{\"columns\": [1], \"editing\": false, \"type\": \"list_identifiers\"}], \"rules\": [{\"error\": null, \"type\": \"add_column_metadata\", \"value\": \"identifier0\", \"warn\": null}, {\"error\": null, \"expression\": \".+element_identifier=(.+)\", \"group_count\": 1, \"target_column\": 0, \"type\": \"add_column_regex\", \"warn\": null}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.0",
+            "type": "tool",
+            "uuid": "e63e88cc-297e-4db9-aaa5-30fe35956369",
+            "workflow_outputs": [
+                {
+                    "label": "miracum_annotation_data",
+                    "output_name": "output",
+                    "uuid": "d5ffe344-2991-415b-a1f0-dd885b1cfb98"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "MIRACUM"
+    ],
+    "uuid": "590e9813-ffce-4f99-b623-f6d57089bcc7",
+    "version": 1
+}

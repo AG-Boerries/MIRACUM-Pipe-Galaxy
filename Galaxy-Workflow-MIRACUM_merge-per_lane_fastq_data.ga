@@ -1,0 +1,215 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "Generate one forward and one reverse reads dataset from multiple partial (per-lane) reads datasets",
+    "format-version": "0.1",
+    "name": "MIRACUM - Merge per-lane fastq data",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Collection of per-lane forward reads"
+                }
+            ],
+            "label": "Collection of per-lane forward reads",
+            "name": "Input dataset collection",
+            "outputs": [],
+            "position": {
+                "bottom": 404.5,
+                "height": 101,
+                "left": 717.5,
+                "right": 917.5,
+                "top": 303.5,
+                "width": 200,
+                "x": 717.5,
+                "y": 303.5
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"fastq\", \"fastq.gz\", \"fastq.bz2\"], \"collection_type\": \"list\"}",
+            "tool_version": null,
+            "type": "data_collection_input",
+            "uuid": "20cdbc29-1d9f-432f-b3df-cb226ae71534",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "e9f1923b-11e3-4d67-b66b-8436c2eb02e2"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Collection of per-lane reverse reads"
+                }
+            ],
+            "label": "Collection of per-lane reverse reads",
+            "name": "Input dataset collection",
+            "outputs": [],
+            "position": {
+                "bottom": 604.5,
+                "height": 101,
+                "left": 718.5,
+                "right": 918.5,
+                "top": 503.5,
+                "width": 200,
+                "x": 718.5,
+                "y": 503.5
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"fastq\", \"fastq.gz\", \"fastq.bz2\"], \"collection_type\": \"list\"}",
+            "tool_version": null,
+            "type": "data_collection_input",
+            "uuid": "265831e9-4aa4-4673-ab41-0fbff4481979",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "a68e3f8c-6493-4a4f-ae7b-56def51321f3"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "input_list": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Collapse Collection",
+                    "name": "input_list"
+                }
+            ],
+            "label": null,
+            "name": "Collapse Collection",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 433.5,
+                "height": 132,
+                "left": 979.5,
+                "right": 1179.5,
+                "top": 301.5,
+                "width": 200,
+                "x": 979.5,
+                "y": 301.5
+            },
+            "post_job_actions": {
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "Merged #{input_list}"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
+            "tool_shed_repository": {
+                "changeset_revision": "830961c48e42",
+                "name": "collapse_collections",
+                "owner": "nml",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"filename\": {\"add_name\": \"false\", \"__current_case__\": 1}, \"input_list\": {\"__class__\": \"RuntimeValue\"}, \"one_header\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": null,
+            "type": "tool",
+            "uuid": "78054d99-8a5f-4e7d-80bb-c0f95895eaee",
+            "workflow_outputs": [
+                {
+                    "label": "merged_fw_reads",
+                    "output_name": "output",
+                    "uuid": "ca894c07-c1cb-4bd2-809b-24d46a598305"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
+            "errors": null,
+            "id": 3,
+            "input_connections": {
+                "input_list": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Collapse Collection",
+                    "name": "input_list"
+                }
+            ],
+            "label": null,
+            "name": "Collapse Collection",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 632.5,
+                "height": 132,
+                "left": 981.5,
+                "right": 1181.5,
+                "top": 500.5,
+                "width": 200,
+                "x": 981.5,
+                "y": 500.5
+            },
+            "post_job_actions": {
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "Merged #{input_list}"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.2",
+            "tool_shed_repository": {
+                "changeset_revision": "830961c48e42",
+                "name": "collapse_collections",
+                "owner": "nml",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"filename\": {\"add_name\": \"false\", \"__current_case__\": 1}, \"input_list\": {\"__class__\": \"RuntimeValue\"}, \"one_header\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": null,
+            "type": "tool",
+            "uuid": "fd9f8dfb-6ae8-4cda-8c3b-7653802fb1b8",
+            "workflow_outputs": [
+                {
+                    "label": "merged_rv_reads",
+                    "output_name": "output",
+                    "uuid": "dc799106-3c8f-4d2e-9b74-85bee94ded9d"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "MIRACUM"
+    ],
+    "uuid": "cce44b0c-869b-4207-97b5-096725eedf26",
+    "version": 1
+}
