@@ -1,6 +1,11 @@
 Prepare the variants/gene annotation data for the Miracum Galaxy workflows
 ==========================================================================
 
+The following instructions can be followed from a Galaxy admin or a regular
+user account. The user performing this, however, will be responsible for
+providing the annotation data used by all runs of the Miracum analysis
+workflows.
+
 1. Create a new empty history and give it a suitable name
 
    *Miracum annotation data* could be such a name.
@@ -75,4 +80,20 @@ Prepare the variants/gene annotation data for the Miracum Galaxy workflows
      In the first case you just have to wait for the uploads to complete before
      trying to run the workflow. In the second case, the simplest solution is
      to discard the collection and start over.
+
+3. Make the annotation data available to all users
+
+   - Select ``History options`` (the gearwheel icon at the top of the history
+     panel), then ``Share or Publish`` under ``History Actions``
      
+     This will take you to the ``Share or Publish History`` page of your Galaxy.
+
+   - You want to select ``Make History Accessible and Publish``, but **before**
+     you do, you need to click the
+     ``Also make all objects within the History accessible.`` checkbox (or
+     other users would be able to see the history, but would not be able to use
+     any of its datasets).
+
+**Congratulations!**
+The Miracum annotation data should now be accessible to every registered user
+on your Galaxy server.
