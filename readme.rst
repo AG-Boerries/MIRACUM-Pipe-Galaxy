@@ -35,7 +35,7 @@ In order to run the Miracum analysis workflows users will also need
 Miracum-specific variants and gene annotation data. Similar to workflows, you
 can make this data available to all users on a server through a shared history.
 The process of doing so is detailed
-`here <https://github.com/AG-Boerries/MIRACUM-Pipe-Galaxy/blob/master/annotation_data/README.md>`_.
+`here <annotation_data/README.md>`_.
 
 Users will start each analysis from a copy of the shared annotation data
 history, or by copying the ``Miracum annotation data`` collection from that
