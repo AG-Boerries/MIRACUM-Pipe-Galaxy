@@ -58,7 +58,7 @@ damit diese lokalen Daten Container-übergreifend persistent gespeichert werden.
   Die Installation mittels *Execute* starten
   (Achtung: der damit verbundene Download ist mit >50GB der mit Abstand
   umfangreichste der gesamten  Installation, der data manager wird also
-  (i. d. Regel limitiert durch die Bereitstellungsrate) sehr lange laufen und
+  - i. d. Regel limitiert durch die Bereitstellungsrate - sehr lange laufen und
   sollte nicht unterbrochen werden.
   Weitere data manager können währenddessen aber problemlos genutzt werden.)
 
