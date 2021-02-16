@@ -84,61 +84,61 @@ Ohne cvmfs-Anbindung folgt:
 
   1. Lauf (installiert das hg19-Genom mit allen - auch partiellen - Contigs):
 
-    - *Use existing dbkey or create a new one.*: ``Existing``
+     - *Use existing dbkey or create a new one.*: ``Existing``
 
-      - *DBKEY to assign to data*: ``Human Feb. 2009 (GRCh37/hg19) hg19``
+       - *DBKEY to assign to data*: ``Human Feb. 2009 (GRCh37/hg19) hg19``
 
-    - *Name of sequence*: ``hg19 Full``
+     - *Name of sequence*: ``hg19 Full``
 
-    - *ID for sequence*: ``hg19``
+     - *ID for sequence*: ``hg19``
 
-    - *Choose the source for the reference genome*: ``URL``
+     - *Choose the source for the reference genome*: ``URL``
 
-      - *URLs*: ``http://datacache.galaxyproject.org/indexes/hg19/seq/hg19full.fa``
+       - *URLs*: ``http://datacache.galaxyproject.org/indexes/hg19/seq/hg19full.fa``
 
-    - *Sort by chromosome name*: ``As is``
+     - *Sort by chromosome name*: ``As is``
 
-    mit *Execute* starten
+     mit *Execute* starten
 
   2. Lauf (installiert das hg19-Genom mit nur den Standard-Chromosomsequenzen):
 
-    - *Use existing dbkey or create a new one.*: ``Existing``
+     - *Use existing dbkey or create a new one.*: ``Existing``
 
-      - *DBKEY to assign to data*: ``Human Feb. 2009 (GRCh37/hg19) hg19``
+       - *DBKEY to assign to data*: ``Human Feb. 2009 (GRCh37/hg19) hg19``
 
-    - *Name of sequence*: ``hg19 Canonical``
+     - *Name of sequence*: ``hg19 Canonical``
 
-    - *ID for sequence*: ``hg19canon``
+     - *ID for sequence*: ``hg19canon``
 
-    - *Choose the source for the reference genome*: ``URL``
+     - *Choose the source for the reference genome*: ``URL``
 
-      - *URLs*: ``http://datacache.galaxyproject.org/indexes/hg19/seq/hg19canon.fa``
+       - *URLs*: ``http://datacache.galaxyproject.org/indexes/hg19/seq/hg19canon.fa``
 
-    - *Sort by chromosome name*: ``As is``
+     - *Sort by chromosome name*: ``As is``
 
-    mit *Execute* starten
+     mit *Execute* starten
 
 - Indizes der beiden Humangenome installieren (data manager: ``SAM FASTA index``, ebenfalls 2x laufen lassen!)
   
   1. Lauf:
 
-    - *Source FASTA Sequence*: ``hg19 Full`` (wenn das Genom nicht angeboten wird, bitte zuerst das humane Referenzgenom (s.o.) installieren)
+     - *Source FASTA Sequence*: ``hg19 Full`` (wenn das Genom nicht angeboten wird, bitte zuerst das humane Referenzgenom (s.o.) installieren)
 
-    - *Name of sequence*: ``hg19 Full``
+     - *Name of sequence*: ``hg19 Full``
 
-    - *ID for sequence*: ``hg19``
+     - *ID for sequence*: ``hg19``
 
-    mit *Execute* starten
+     mit *Execute* starten
 
   2. Lauf:
 
-    - *Source FASTA Sequenc*e: ``hg19 Canonical`` (wenn das Genom nicht angeboten wird, bitte zuerst das humane Referenzgenom (s.o.) installieren)
+     - *Source FASTA Sequenc*e: ``hg19 Canonical`` (wenn das Genom nicht angeboten wird, bitte zuerst das humane Referenzgenom (s.o.) installieren)
 
-    - *Name of sequence*: ``hg19 Canonical``
+     - *Name of sequence*: ``hg19 Canonical``
 
-    - *ID for sequence*: ``hg19canon``
+     - *ID for sequence*: ``hg19canon``
 
-    mit *Execute* starten
+     mit *Execute* starten
 
 - BWA-MEM-Index des Humangenoms generieren und installieren (data manager: ``BWA-MEM index``)
 
