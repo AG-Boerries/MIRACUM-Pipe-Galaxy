@@ -19,7 +19,7 @@ which applies to all "official" Galaxy docker images derived from
 https://quay.io/repository/bgruening/galaxy.
 At a bare minimum, it is recommended that you read the
 `introductory section <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md#Usage>`_
-of this guide. In particular you should understand the special role of the
+of that guide. In particular you should understand the special role of the
 ``/export`` folder in the image.
 `On-demand reference data with CVMFS <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md#cvmfs>`_
 may be another section of special interest that you should have read before
@@ -100,7 +100,7 @@ Basic usage instructions are available `here <https://github.com/bgruening/docke
 
 For other instances of Galaxy, or if you would like to upgrade your list of
 installed tools without downloading a new image version, please refer to our
-`Installation of tools <tools/README.md`_ page.
+`Installation of tools <tools/README.md>`_ page.
 
 
 Advanced Galaxy configuration
