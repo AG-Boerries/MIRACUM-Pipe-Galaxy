@@ -1,8 +1,66 @@
-MIRACUM workflows, scripts and configuration files for Galaxy
-=============================================================
+MIRACUM workflows, data, scripts and configuration files for Galaxy
+===================================================================
 
-Galaxy Admins
+Prerequisites
 -------------
+
+This repo aims at providing all accessory files and documentation that you will
+need to turn your Galaxy docker image into a productive Miracum variant calling
+environment.
+
+The documentation here does not go into much detail regarding the use
+of docker (or podman), nor does it try to reproduce all of information about
+Galaxy docker images.
+
+To learn about all the features that Galaxy docker images have to offer, please
+consult
+`this documentation <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md>`_,
+which applies to all "official" Galaxy docker images derived from
+https://quay.io/repository/bgruening/galaxy.
+At a bare minimum, it is recommended that you read the
+`introductory section <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md#Usage>`_
+of that guide. In particular you should understand the special role of the
+``/export`` folder in the image.
+`On-demand reference data with CVMFS <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md#cvmfs>`_
+may be another section of special interest that you should have read before
+installing reference data for your users (see the *Reference data* section
+below). If you are upgrading your environment from an older Galaxy docker
+image, the guide also features a section on
+`Image upgrades <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md#Upgrading-images>`_.
+Finally, if you are using the recommended Galaxy Miracum image please also take
+a look at its specific
+`usage hints <https://github.com/bgruening/docker-galaxy-exome-seq/blob/miracum_20.09/README.md>`_.
+
+
+Getting the image ready for production use
+------------------------------------------
+
+Once you have pulled a suitable Galaxy image and have launched a container with
+Galaxy you will have to do some initial setup work on your Galaxy instance to
+prepare it for its users and their analysis needs.
+
+This work will always involve installing *reference data*, *workflows* and
+Miracum *annotation data*. In some situations you may also have to install
+additional tools, or update existing ones.
+
+
+Reference data
+..............
+
+The analyses carried out on your server will require human reference genome
+data from various sources. Galaxy offers special tools called *data managers*,
+which are only accessible to admin users, that can be used to pull this data
+and make it available to regular users. Your first setup task will be to run
+several of the data managers through Galaxy's graphical user interface, and our
+page on `Installation of reference data <ref_data/README.md>`_ guides you
+through this process.
+
+Note: Just how many different data managers you will have to run depends on how
+you started your container. By starting it in ``--privileged`` mode you will
+enjoy automounting of some of the required reference data from the Galaxy
+project's CVMFS servers as explained in the Galaxy docker image
+`usage instructions <https://github.com/bgruening/docker-galaxy-stable/blob/20.09/README.md#cvmfs>`_.
+
 
 Workflows
 .........
@@ -12,64 +70,55 @@ used in Galaxy. To use these workflows, import the files into any Galaxy
 instance that has all required tools installed (see Tools section below), and
 make the workflows available to all users by publishing them on the instance.
 
-Users can then run the *Miracum - main*, *Miracum - variant annotation* and
-*Miracum - report variants* workflows (or their *panel* counterparts), in this
-order, to go from raw sequenced exome reads to annotated tabular variant
-reports.
+For more details see the dedicated page on
+`Installation of workflows <workflows/README.md>`_.
 
-Note: If you're not planning to edit the workflows, there is no need for you to
-import any ``Galaxy_Subworkflow_*.ga`` workflow definition files since the main
-workflows have the subworkflows integrated into their definition files.
+
+Annotation data
+...............
+
+In order to run the Miracum analysis workflows users will also need
+Miracum-specific variants and gene annotation data. Similar to workflows, you
+can make this data available to all users on a server through a shared history.
+The process of doing so is detailed
+`here <annotation_data/README.md>`_.
+
+Users will start each analysis from a copy of the shared annotation data
+history, or by copying the ``Miracum annotation data`` collection from that
+history into a new history of their own.
+
 
 Tools
 .....
 
 The simplest way to get a Galaxy instance with all required tools up and
 running is to use our `preconfigured docker image
-<https://github.com/bgruening/docker-galaxy-exome-seq>`_. The current version
+<https://github.com/bgruening/docker-galaxy-exome-seq/tree/miracum_20.09>`_. The current version
 of this image can be pulled from
-``quay.io/bgruening/galaxy-exome-seq:miracum_19.01``.
+``quay.io/bgruening/galaxy-exome-seq:miracum_20.09``.
+Basic usage instructions are available `here <https://github.com/bgruening/docker-galaxy-exome-seq/blob/miracum_20.09/README.md>`_.
 
-For other instances of Galaxy, you can use the `miracum_tools.yaml` file, which
-is part of this repo, to install all required tools at the expected versions
-with `Ephemeris
-<https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html>`__.
+For other instances of Galaxy, or if you would like to upgrade your list of
+installed tools without downloading a new image version, please refer to our
+`Installation of tools <tools/README.md>`_ page.
+
 
 Advanced Galaxy configuration
 .............................
 
 Galaxy allows you to configure resource allocation for every single tool in the
-workflows. This is done via a `job_conf.xml` configuration file.
-
-You can read more about the syntax and options available in this config file in
-the corresponding `section of the Galaxy documentation
-<https://docs.galaxyproject.org/en/master/admin/jobs.html>`__.
-
-For the Miracum project specifically, this repo includes a
-``job_conf.xml.sample`` file, with what we think are reasonable default settings
-for the workflows. The sample file assumes SLURM as your job scheduler (which
-comes included and completely set up with our docker image) and allocates
-multiple cores to the tools that profit from them.
-
-Of course, you may need to tailor the exact settings to your hardware resources
-or cluster specifications.
-
-To use the new configuration, copy the sample file to ``config/job_conf.xml``
-inside the Galaxy root folder. If you're using our docker image that place is
-``/export/galaxy-central/config/job_conf.xml`` from inside the container (you
-can also put the file in a different location, as long as that location is
-accessible from inside the container, and point Galaxy to this file by
-including ``-e GALAXY_CONFIG_JOB_CONFIG_FILE=<path_to_the_job_conf_file>`` in
-your container *run* command.
+workflows. A reasonable configuration matching your actual hardware resources
+is essential for efficient data analysis.
+You can find suggestions and hints `here <config/README.md>`_.
 
 
-Developers
-----------
+Information for contributors
+----------------------------
 
 Galaxy Workflow files are JSON-formatted. You can edit them manually, or import
 them into Galaxy and use Galaxy's graphical workflow editor, then download the
 edited version again. Either way, you should pretty-format the edited file
-before committing them to obtain nice and readable diffs.
+before committing them to obtain nicer, more readable diffs.
 Use, *e.g.*, Python's built-in ``json.tool`` command for this task::
 
   python3 -m json.tool your_edited_workflow.ga > workflow_to_commit.ga
@@ -77,8 +126,3 @@ Use, *e.g.*, Python's built-in ``json.tool`` command for this task::
 Python3.5 or later is required because earlier versions won't preserve element
 order.
 
-When you edit a subworkflow, please note that the changes you make do not get
-reflected in the containing workflow (which carries its own embedded copy of
-the subworkflow). To make your changes visible in the containing workflow, you
-need to remove the embedded subworkflow from it and add the edited version back
-in.

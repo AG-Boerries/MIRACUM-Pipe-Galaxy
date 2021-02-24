@@ -1,6 +1,11 @@
 Prepare the variants/gene annotation data for the Miracum Galaxy workflows
 ==========================================================================
 
+The following instructions can be followed from a Galaxy admin or a regular
+user account. The user performing this, however, will be responsible for
+providing the annotation data used by all runs of the Miracum analysis
+workflows.
+
 1. Create a new empty history and give it a suitable name
 
    *Miracum annotation data* could be such a name.
@@ -59,7 +64,20 @@ Prepare the variants/gene annotation data for the Miracum Galaxy workflows
      the ``Refresh history`` icon at the top of the history panel (and then
      navigate back into the collection) to see the current status.
 
+   **While you're waiting you can already continue with installing a helper
+   workflow** that you will use to restructure the downloaded annotation data
+   into the format expected by the analytical workflows.
+
    - Select ``Workflow`` from the top menu of your Galaxy
+
+   - Find the ``Import`` button at the top-right of the page
+
+   - Under ``Archived Workflow URL`` enter the URL:
+     ``https://github.com/AG-Boerries/MIRACUM-Pipe-Galaxy/raw/master/workflows/Galaxy-Workflow-MIRACUM_prepare_annotation_data.ga``
+
+   - Click ``Import workflow``
+
+   Once the annotation data upload is complete you can run the helper workflow.
 
    - Find the ``MIRACUM - Prepare annotation data`` workflow in the list of
      available workflows and click the ``Run Workflow`` icon (at the very right
@@ -75,4 +93,23 @@ Prepare the variants/gene annotation data for the Miracum Galaxy workflows
      In the first case you just have to wait for the uploads to complete before
      trying to run the workflow. In the second case, the simplest solution is
      to discard the collection and start over.
+
+3. Make the annotation data available to all users
+
+   - Select ``History options`` (the gearwheel icon at the top of the history
+     panel), then ``Share or Publish`` under ``History Actions``
      
+     This will take you to the ``Share or Publish History`` page of your Galaxy.
+
+   - You want to select ``Make History Accessible and Publish``, but **before**
+     you do, you need to click the
+     ``Also make all objects within the History accessible.`` checkbox (or
+     other users would be able to see the history, but would not be able to use
+     any of its datasets).
+
+   The helper workflow for structuring the annotation data is *not* required
+   for your users so you do not need to share it.
+
+**Congratulations!**
+The Miracum annotation data should now be accessible to every registered user
+on your Galaxy server.
