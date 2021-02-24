@@ -64,7 +64,20 @@ workflows.
      the ``Refresh history`` icon at the top of the history panel (and then
      navigate back into the collection) to see the current status.
 
+   **While you're waiting you can already continue with installing a helper
+   workflow** that you will use to restructure the downloaded annotation data
+   into the format expected by the analytical workflows.
+
    - Select ``Workflow`` from the top menu of your Galaxy
+
+   - Find the ``Import`` button at the top-right of the page
+
+   - Under ``Archived Workflow URL`` enter the URL:
+     ``https://github.com/AG-Boerries/MIRACUM-Pipe-Galaxy/raw/master/workflows/Galaxy-Workflow-MIRACUM_prepare_annotation_data.ga``
+
+   - Click ``Import workflow``
+
+   Once the annotation data upload is complete you can run the helper workflow.
 
    - Find the ``MIRACUM - Prepare annotation data`` workflow in the list of
      available workflows and click the ``Run Workflow`` icon (at the very right
@@ -93,6 +106,9 @@ workflows.
      ``Also make all objects within the History accessible.`` checkbox (or
      other users would be able to see the history, but would not be able to use
      any of its datasets).
+
+   The helper workflow for structuring the annotation data is *not* required
+   for your users so you do not need to share it.
 
 **Congratulations!**
 The Miracum annotation data should now be accessible to every registered user

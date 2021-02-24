@@ -79,8 +79,8 @@ Ohne cvmfs-Anbindung folgt:
 - Installation des humanen Referenzgenoms Version hg19
   (data manager: ``Create DBKey and Reference Genome``)
 
-  Achtung: es werden **zwei** Varianten des hg19 Referenzgenoms benötigt, d.h.
-  der data manager muss 2x aufgerufen werden!
+  **Achtung**: es werden **zwei** Varianten des hg19 Referenzgenoms benötigt,
+  d.h. der data manager muss 2x aufgerufen werden!
 
   1. Lauf (installiert das hg19-Genom mit allen - auch partiellen - Contigs):
 
@@ -95,6 +95,8 @@ Ohne cvmfs-Anbindung folgt:
      - *Choose the source for the reference genome*: ``URL``
 
        - *URLs*: ``http://datacache.galaxyproject.org/indexes/hg19/seq/hg19full.fa``
+
+         **Achtung**: der URL darf *keinen* Zeilenumbruch enthalten!
 
      - *Sort by chromosome name*: ``As is``
 
@@ -113,6 +115,8 @@ Ohne cvmfs-Anbindung folgt:
      - *Choose the source for the reference genome*: ``URL``
 
        - *URLs*: ``http://datacache.galaxyproject.org/indexes/hg19/seq/hg19canon.fa``
+
+         **Achtung**: der URL darf *keinen* Zeilenumbruch enthalten!
 
      - *Sort by chromosome name*: ``As is``
 
