@@ -1181,7 +1181,7 @@
             "post_job_actions": {
                 "ChangeDatatypeActionoutput": {
                     "action_arguments": {
-                        "newtype": "bed"
+                        "newtype": "vcf"
                     },
                     "action_type": "ChangeDatatypeAction",
                     "output_name": "output"
@@ -2642,7 +2642,7 @@
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"a\": {\"a_selector\": \"extract\", \"__current_case__\": 0, \"actions\": [{\"__index__\": 0, \"element_to_extract\": \"4\", \"column_name\": \"overlapping_civic_url\", \"column_type\": \"text\", \"operation\": \"uniq_list\"}]}, \"annotate_source\": {\"__class__\": \"ConnectedValue\"}, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"region_only\": \"true\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"a\": {\"a_selector\": \"extract\", \"__current_case__\": 0, \"actions\": [{\"__index__\": 0, \"element_to_extract\": \"CVU\", \"column_name\": \"overlapping_civic_url\", \"column_type\": \"text\", \"operation\": \"uniq_list\"}]}, \"annotate_source\": {\"__class__\": \"ConnectedValue\"}, \"infile\": {\"__class__\": \"ConnectedValue\"}, \"region_only\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": null,
             "type": "tool",
             "uuid": "e795b750-2846-4549-bd06-88226c26a557",
@@ -4943,5 +4943,5 @@
         "MIRACUM"
     ],
     "uuid": "5a07795b-ad92-4fb1-848a-3271048fff8d",
-    "version": 14
+    "version": 15
 }
