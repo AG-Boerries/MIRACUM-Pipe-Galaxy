@@ -1,0 +1,36 @@
+Downloaded annotation data as collection:
+  class: Collection
+  collection_type: list
+  elements:
+  - class: File
+    identifier: miracum_element_identifier=annotation.metadata
+    filetype: tabular
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33aa1c2191af7a79b9c/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=annotation.metadata
+  - class: File
+    identifier: miracum_element_identifier=dbSNP.tidy
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33abea3eb2f1b40fc3e/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=dbSNP.tidy
+  - class: File
+    identifier: miracum_element_identifier=hotspots.data
+    filetype: bed
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33a8142984ef06e3531/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=hotspots.data
+  - class: File
+    identifier: miracum_element_identifier=civic.variants
+    filetype: vcf
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33aa5105b08eaee1108/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=civic.variants
+  - class: File
+    identifier: miracum_element_identifier=cgi.variants
+    filetype: bed
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33a74e69e0263b752a0/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=cgi.variants
+  - class: File
+    identifier: miracum_element_identifier=uniprot_cancer.genes
+    filetype: tabular
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33aedeb453f1db5d19f/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=uniprot_cancer.genes
+  - class: File
+    identifier: miracum_element_identifier=civic.genes
+    filetype: tabular
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33ab24d9f463c0002b6/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=civic.genes
+  - class: File
+    identifier: miracum_element_identifier=cgi.genes
+    filetype: tabular
+    location: https://usegalaxy.eu/datasets/11ac94870d0bb33a0e35b8cf7187e7ac/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=cgi.genes
+

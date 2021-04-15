@@ -22,14 +22,14 @@ workflows.
      ``Download data from the web by entering URLs (one per line) or directly paste content.``:
 
      ```
-     https://usegalaxy.eu/datasets/11ac94870d0bb33af8a0b58436090b1f/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=dbSNP.tidy
-     https://usegalaxy.eu/datasets/11ac94870d0bb33aae6dafccda2f98ce/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=hotspots.data
-     https://usegalaxy.eu/datasets/11ac94870d0bb33a3db9ccac021aab7f/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=civic.variants
-     https://usegalaxy.eu/datasets/11ac94870d0bb33ab81bfc56727e2942/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=cgi.variants
-     https://usegalaxy.eu/datasets/11ac94870d0bb33a11fcc194ba0ac3c9/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=uniprot_cancer.genes
-     https://usegalaxy.eu/datasets/11ac94870d0bb33a075823877241b126/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=civic.genes
-     https://usegalaxy.eu/datasets/11ac94870d0bb33aaba0d2b1d7be95e2/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=cgi.genes
-     https://usegalaxy.eu/datasets/11ac94870d0bb33a239a2350da3ca8b2/display?to_ext=data&hdca_id=32acb0c597889ace&element_identifier=annotation.metadata
+     https://usegalaxy.eu/datasets/11ac94870d0bb33abea3eb2f1b40fc3e/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=dbSNP.tidy
+     https://usegalaxy.eu/datasets/11ac94870d0bb33a8142984ef06e3531/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=hotspots.data
+     https://usegalaxy.eu/datasets/11ac94870d0bb33aa5105b08eaee1108/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=civic.variants
+     https://usegalaxy.eu/datasets/11ac94870d0bb33a74e69e0263b752a0/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=cgi.variants
+     https://usegalaxy.eu/datasets/11ac94870d0bb33aedeb453f1db5d19f/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=uniprot_cancer.genes
+     https://usegalaxy.eu/datasets/11ac94870d0bb33ab24d9f463c0002b6/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=civic.genes
+     https://usegalaxy.eu/datasets/11ac94870d0bb33a0e35b8cf7187e7ac/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=cgi.genes
+     https://usegalaxy.eu/datasets/11ac94870d0bb33aa1c2191af7a79b9c/display?to_ext=data&hdca_id=82ce81c611294d8a&element_identifier=annotation.metadata
      ```
 
    - Click ``Start``

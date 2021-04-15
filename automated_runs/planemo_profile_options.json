@@ -1,0 +1,11 @@
+{
+  "galaxy_url": "https://usegalaxy.eu",
+  "galaxy_user_key": "API KEY goes here",
+  "galaxy_admin_key": null,
+  "engine": "external_galaxy",
+  "aliases": {
+    "build_miracum_annotation_data": "d7ae1144d942faf7",
+    "miracum_wes_workflow": "220961d803697f54",
+    "miracum_panel_workflow": "ff2fd4a4bb27d859"
+  }
+}
