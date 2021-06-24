@@ -1,6 +1,11 @@
 MIRACUM workflows, data, scripts and configuration files for Galaxy
 ===================================================================
 
+Disclaimer
+----------
+
+All content of this repo is intended for research use only and not for patient treatment, diagnosis and/or medical records!
+
 Prerequisites
 -------------
 
